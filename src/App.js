@@ -81,16 +81,41 @@ const App = () => {
           <p className="text-md  text-gray-600 pt-1 pb-1 ">
             Your frequently used actions for easy access
           </p>
-          <div className="bg-[#FFF6E6] rounded-md w-full flex flex-col p-4 justify-between space-y-6">
-            <div className="flex flex-row justify-between items-center">
-              <div className="flex flex-col">
-                <p>Personal Account</p>
-                <p>USD</p>
-              </div>
-              <img src="/img/usd.png" />
+          <div className="grid grid-cols-2 gap-3">
+            <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-8">
+              <img src="/img/addwallet.png" className="w-10" />
+              <p className="text-gray-500  ">Add new Wallet</p>
             </div>
-            <div>
-              <p className="font-bold text-2xl">$ 10,250.00</p>
+            <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-8">
+              <img src="/img/addwallet.png" className="w-10" />
+              <p className="text-gray-500  ">Add new Wallet</p>
+            </div>
+
+            <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-8">
+              <img src="/img/addwallet.png" className="w-10" />
+              <p className="text-gray-500  ">Add new Wallet</p>
+            </div>
+            <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-8">
+              <img src="/img/addwallet.png" className="w-10" />
+              <p className="text-gray-500  ">Add new Wallet</p>
+            </div>
+
+            <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-8">
+              <img src="/img/addwallet.png" className="w-10" />
+              <p className="text-gray-500  ">Add new Wallet</p>
+            </div>
+            <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-8">
+              <img src="/img/addwallet.png" className="w-10" />
+              <p className="text-gray-500  ">Add new Wallet</p>
+            </div>
+
+            <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-8">
+              <img src="/img/addwallet.png" className="w-10" />
+              <p className="text-gray-500  ">Add new Wallet</p>
+            </div>
+            <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-8">
+              <img src="/img/addwallet.png" className="w-10" />
+              <p className="text-gray-500  ">Add new Wallet</p>
             </div>
           </div>
         </div>
