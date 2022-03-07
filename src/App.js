@@ -435,16 +435,26 @@ const App = () => {
               </div>
             </div>
           </div>
-          <div className="w-9/12">
-            <nav className=" w-full bg-white-400 fixed pb-48 ">
-              <div className="px-4 sm:px-10 py-4 bg-white flex flex-row  items-center shadow-md">
-                <p className="text-center text-2xl  sm:text-3xl text-gray-800 pt-5 font-bold">
+          <div className="w-9/12 ">
+            <nav className=" p-6 w-full flex flex-row justify-between items-center">
+              <div>
+                <p className="text-center text-2xl  text-gray-800  font-bold">
                   Welcome, Mends Albert
                 </p>
-
-                <div className=" flex items-center justify-start space-x-2">
-                  <div className="flex flex-col items-center">
+              </div>
+              <div className="flex flex-row items-center">
+                <div className="border-gray-300 border-2 w-5/12 flex flex-row items-center rounded-xl ">
+                  <SearchIcon className="h-6 text-gray-600  pl-2" />
+                  <input
+                    type="text"
+                    placeholder="search"
+                    className=" rounded-lg p-2 w-full bg-transparent text-lg font-Montserrat  focus:outline-none"
+                  />
+                </div>
+                <div className=" ml-5 flex items-center justify-start space-x-2">
+                  <div className="flex flex-col justify-center items-center">
                     <img src="/img/upload.png" />
+                    <p>0 planted</p>
                   </div>
 
                   <div className="relative">
@@ -460,10 +470,11 @@ const App = () => {
                     <img src="/img/avtr.png " className="w-14 h-10" />
                     <div className="flex flex-col">
                       <p className="text-green-600 text-sm">verified</p>
-                      <p className="text-md font-bold text-gray-800">
+                      <p className="text-md font-bold text-gray-800 w-full">
                         Mends Albert
                       </p>
                     </div>
+                    <ChevronDownIcon className="h-5 text-gray-700 cursor-pointer" />
                   </div>
                 </div>
               </div>
