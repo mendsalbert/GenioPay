@@ -58,6 +58,7 @@ const App = () => {
 
   return (
     <Layout>
+      <div className="w-11/12 bg-[#017189] h-full fixed shadow-2xl top-0 left-0 z-50"></div>
       <nav className=" w-full bg-white-400 fixed pb-48">
         <div className="px-4 py-4 bg-white flex flex-row  items-center justify-between shadow-md">
           <div className="bg-white  shadow-lg rounded-full  p-4 text-center">
@@ -90,19 +91,19 @@ const App = () => {
           </div>
         </div>
       </nav>
-      <main className="px-4 pt-28">
+      <main className="px-4 pt-32">
         <div>
-          <p className="text-center text-2xl text-gray-800 pt-5 font-bold">
-            Welcome, Mends Albert
-          </p>
-          {/* <div className="border-gray-300 border-2 w-full flex flex-row items-center rounded-xl ">
+          <div className="border-gray-300 border-2 w-full flex flex-row items-center rounded-xl ">
             <SearchIcon className="h-6 text-gray-600  pl-2" />
             <input
               type="text"
               placeholder="search"
               className=" rounded-lg p-2 w-full bg-transparent text-lg font-Montserrat  focus:outline-none"
             />
-          </div> */}
+          </div>
+          <p className="text-center text-2xl text-gray-800 pt-5 font-bold">
+            Welcome, Mends Albert
+          </p>
         </div>
         <div>
           <p className="text-lg  text-gray-800 pt-5 pb-1 font-bold ">Wallet</p>
