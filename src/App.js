@@ -82,36 +82,36 @@ const App = () => {
             Your frequently used actions for easy access
           </p>
           <div className="grid grid-cols-2 gap-3">
-            <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-8">
-              <img src="/img/addwallet.png" className="w-10" />
+            <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-4">
+              <img src="/img/addwallet.png" className="w-7" />
 
               <p className="text-gray-500  ">Add new Wallet</p>
             </div>
-            <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-8">
-              <img src="/img/addcard.png" className="w-10" />
+            <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-4">
+              <img src="/img/addcard.png" className="w-7" />
               <p className="text-gray-500  ">Add new Card</p>
             </div>
 
-            <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-8">
-              <img src="/img/balanceexchange.png" className="w-10" />
+            <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-4">
+              <img src="/img/balanceexchange.png" className="w-7" />
               <p className="text-gray-500  ">Balance Exchange</p>
             </div>
-            <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-8">
-              <img src="/img/transfer.png" className="w-10" />
+            <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-4">
+              <img src="/img/transfer.png" className="w-7" />
               <p className="text-gray-500  ">transfer to Account</p>
             </div>
 
-            <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-8">
-              <img src="/img/generate.png" className="w-10" />
+            <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-4">
+              <img src="/img/generate.png" className="w-7" />
               <p className="text-gray-500  ">Generate Voucher</p>
             </div>
-            <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-8">
-              <img src="/img/momo.png" className="w-10" />
+            <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-4">
+              <img src="/img/momo.png" className="w-7" />
               <p className="text-gray-500  ">Mobile Money</p>
             </div>
 
-            <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-8">
-              <img src="/img/payment_link.png" className="w-10" />
+            <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-4">
+              <img src="/img/payment_link.png" className="w-7" />
               <p className="text-gray-500  ">Payment Link</p>
             </div>
           </div>
