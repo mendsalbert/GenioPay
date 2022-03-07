@@ -62,7 +62,25 @@ const App = () => {
     {
       name: "Apr",
       uv: 3,
-      $: 3,
+      $: 4,
+      amt: 10,
+    },
+    {
+      name: "May",
+      uv: 3,
+      $: 2,
+      amt: 10,
+    },
+    {
+      name: "Jun",
+      uv: 3,
+      $: 4,
+      amt: 10,
+    },
+    {
+      name: "July",
+      uv: 3,
+      $: 1,
       amt: 10,
     },
   ];
@@ -435,8 +453,8 @@ const App = () => {
               </div>
             </div>
           </div>
-          <div className="w-9/12 ">
-            <nav className=" p-6 w-full flex flex-row justify-between items-center">
+          <div className="w-9/12 m-6">
+            <nav className="  w-full flex flex-row justify-between items-center">
               <div>
                 <p className="text-center text-2xl  text-gray-800  font-bold">
                   Welcome, Mends Albert
@@ -479,6 +497,146 @@ const App = () => {
                 </div>
               </div>
             </nav>
+
+            <div className="">
+              <p className="text-lg  text-gray-800 pt-5 pb-4 font-bold sm:text-2xl ">
+                Wallet
+              </p>
+              <div className="flex flex-row">
+                <div className="bg-[#FFF6E6] rounded-md w-4/12 flex flex-col p-4 justify-between space-y-6">
+                  <div className="flex flex-row justify-between items-center">
+                    <div className="flex flex-col">
+                      <p>Personal Account</p>
+                      <p>USD</p>
+                    </div>
+                    <img src="/img/usd.png" />
+                  </div>
+                  <div>
+                    <p className="font-bold text-2xl">$ 10,250.00</p>
+                  </div>
+                </div>
+                <img src={plus} className="w-10 pb-2 sm:ml-4" />
+              </div>
+            </div>
+
+            <main className="">
+              <div>
+                <p className="text-lg  text-gray-800 pt-5 pb-0 font-bold sm:text-2xl ">
+                  Quick Link
+                </p>
+                <p className="text-md text-gray-600 pt-1 pb-7 sm:text-lg">
+                  Your frequently used actions for easy access
+                </p>
+                <div className="grid grid-cols-7  gap-3">
+                  <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-6">
+                    <img src={wallet} className="w-10" />
+
+                    <p className="text-gray-500  ">Add new Wallet</p>
+                  </div>
+                  <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-6">
+                    <img src={card} className="w-10" />
+                    <p className="text-gray-500  ">Add new Card</p>
+                  </div>
+
+                  <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-6">
+                    <img src={ballance} className="w-10" />
+                    <p className="text-gray-500  ">Balance Exchange</p>
+                  </div>
+                  <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-6">
+                    <img src={account} className="w-10" />
+                    <p className="text-gray-500  ">transfer to Account</p>
+                  </div>
+
+                  <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-6">
+                    <img src={voucher} className="w-10" />
+                    <p className="text-gray-500  ">Generate Voucher</p>
+                  </div>
+                  <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-6">
+                    <img src={momo} className="w-10" />
+                    <p className="text-gray-500  ">Mobile Money</p>
+                  </div>
+
+                  <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-6">
+                    <img src={link} className="w-10" />
+                    <p className="text-gray-500  ">Payment Link</p>
+                  </div>
+                </div>
+              </div>
+            </main>
+
+            <main className="px-4 sm:px-10 pt-6">
+              <div>
+                <div className="">
+                  <div className="flex flex-row justify-between ">
+                    <div className="flex flex-row items-center pb-3">
+                      <p className="font-bold text-lg mr-5"> Activity</p>
+                      <div className=" flex flex-row items-center text-[#017189]">
+                        <p>Month</p>
+                        <ChevronDownIcon className="h-7 text-gray-700 cursor-pointer" />
+                      </div>
+                    </div>
+
+                    <div className="text-lg font-bold pb-3 text-[#017189] cursor-pointer">
+                      View transaction history
+                    </div>
+                  </div>
+                  <div className="flex flex-row justify-end space-x-2">
+                    <div className="flex items-center bg-gray-100 p-2 rounded-md shadow-md">
+                      <img src={trans} className="w-16 mr-5" />
+                      <div>
+                        <p>Total transaction</p>
+                        <p className="font-bold">$88,666.00</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center bg-gray-100 p-2 rounded-md shadow-md">
+                      <img src={payout} className="w-16 mr-5" />
+                      <div>
+                        <p>Pay-In</p>
+                        <p className="font-bold">$88,666.00</p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-center bg-gray-100 p-2 rounded-md shadow-md">
+                      <img src={payin} className="w-16 mr-5" />
+                      <div>
+                        <p>Pay-Out</p>
+                        <p className="font-bold">$88,666.00</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="pt-9 pb-9">
+                    <ResponsiveContainer width="100%" height={400}>
+                      <AreaChart
+                        width={500}
+                        height={600}
+                        data={data}
+                        syncId="anyId"
+                        margin={{
+                          top: 10,
+                          right: 30,
+                          left: 0,
+                          bottom: 0,
+                        }}
+                      >
+                        <CartesianGrid strokeDasharray="3 3" />
+                        <XAxis dataKey="name" />
+                        <YAxis domain={[1, 5]} tickFormatter={formatter} />
+                        <Tooltip />
+                        <Area
+                          type="monotone"
+                          dataKey="$"
+                          // stroke="#82ca9d"
+                          stroke="#008aa8"
+                          strokeWidth={5}
+                          fill="#82ca9d"
+                        />
+                      </AreaChart>
+                    </ResponsiveContainer>
+                  </div>
+                </div>
+              </div>
+            </main>
           </div>
         </div>
       </div>
