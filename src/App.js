@@ -6,7 +6,7 @@ import {
 } from "@heroicons/react/outline";
 import React from "react";
 import Layout from "./components/Layout/Layout";
-
+import trans from "./svgs/trans.svg";
 const App = () => {
   return (
     <Layout>
@@ -114,6 +114,34 @@ const App = () => {
               <img src="/img/payment_link.png" className="w-7" />
               <p className="text-gray-500  ">Payment Link</p>
             </div>
+          </div>
+        </div>
+      </main>
+
+      <main className="px-4 ">
+        <div>
+          <div className="flex flex-col">
+            <div className="flex flex-row items-center ">
+              <p className="font-bold text-lg mr-5"> Activity</p>
+              <div className=" flex flex-row items-center">
+                <p>Month</p>
+                <ChevronDownIcon className="h-7 text-gray-700 cursor-pointer" />
+              </div>
+            </div>
+
+            <div className="text-lg font-bold">View transaction history</div>
+
+            <div className="">
+              <div className="flex ">
+                <img src={trans} className="w-16" />
+                <div>
+                  <p>Total transaction</p>
+                  <p>$88,666.00</p>
+                </div>
+              </div>
+            </div>
+
+            <div>..charts</div>
           </div>
         </div>
       </main>
