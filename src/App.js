@@ -436,7 +436,38 @@ const App = () => {
             </div>
           </div>
           <div className="w-9/12">
-            <div className="w-full bg-red-400 h-50">ffdsf</div>
+            <nav className=" w-full bg-white-400 fixed pb-48 ">
+              <div className="px-4 sm:px-10 py-4 bg-white flex flex-row  items-center shadow-md">
+                <p className="text-center text-2xl  sm:text-3xl text-gray-800 pt-5 font-bold">
+                  Welcome, Mends Albert
+                </p>
+
+                <div className=" flex items-center justify-start space-x-2">
+                  <div className="flex flex-col items-center">
+                    <img src="/img/upload.png" />
+                  </div>
+
+                  <div className="relative">
+                    <img src="img/notification.png" />
+                    <div className=" absolute -top-2 -right-1 ">
+                      <span class="absolute right-0 top-0 rounded-full bg-red-600 w-4 h-4 top right p-0 m-0 text-white  text-sm  leading-tight text-center">
+                        5
+                      </span>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-row items-center pr-1 ">
+                    <img src="/img/avtr.png " className="w-14 h-10" />
+                    <div className="flex flex-col">
+                      <p className="text-green-600 text-sm">verified</p>
+                      <p className="text-md font-bold text-gray-800">
+                        Mends Albert
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
           </div>
         </div>
       </div>
