@@ -8,6 +8,13 @@ import React from "react";
 import Layout from "./components/Layout/Layout";
 import trans from "./svgs/trans.svg";
 import wallet from "./svgs/wallet.svg";
+import account from "./svgs/account.svg";
+import ballance from "./svgs/ballance.svg";
+import momo from "./svgs/momo.svg";
+import voucher from "./svgs/voucher.svg";
+import link from "./svgs/link.svg";
+import card from "./svgs/card.svg";
+
 import {
   AreaChart,
   Area,
@@ -128,30 +135,30 @@ const App = () => {
               <p className="text-gray-500  ">Add new Wallet</p>
             </div>
             <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-6">
-              <img src={wallet} className="w-10" />
+              <img src={card} className="w-10" />
               <p className="text-gray-500  ">Add new Card</p>
             </div>
 
             <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-6">
-              <img src={wallet} className="w-10" />
+              <img src={ballance} className="w-10" />
               <p className="text-gray-500  ">Balance Exchange</p>
             </div>
             <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-6">
-              <img src={wallet} className="w-10" />
+              <img src={account} className="w-10" />
               <p className="text-gray-500  ">transfer to Account</p>
             </div>
 
             <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-6">
-              <img src={wallet} className="w-10" />
+              <img src={voucher} className="w-10" />
               <p className="text-gray-500  ">Generate Voucher</p>
             </div>
             <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-6">
-              <img src={wallet} className="w-10" />
+              <img src={momo} className="w-10" />
               <p className="text-gray-500  ">Mobile Money</p>
             </div>
 
             <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-6">
-              <img src={wallet} className="w-10" />
+              <img src={link} className="w-10" />
               <p className="text-gray-500  ">Payment Link</p>
             </div>
           </div>
