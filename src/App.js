@@ -84,6 +84,7 @@ const App = () => {
           <div className="grid grid-cols-2 gap-3">
             <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-8">
               <img src="/img/addwallet.png" className="w-10" />
+
               <p className="text-gray-500  ">Add new Wallet</p>
             </div>
             <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-8">
