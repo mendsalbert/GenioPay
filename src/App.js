@@ -17,6 +17,7 @@ import card from "./svgs/card.svg";
 import payin from "./svgs/payin.svg";
 import payout from "./svgs/payout.svg";
 import plus from "./svgs/plus.svg";
+import geniopay from "./svgs/geniopay.svg";
 import {
   AreaChart,
   Area,
@@ -58,7 +59,13 @@ const App = () => {
 
   return (
     <Layout>
-      <div className="w-11/12 bg-[#017189] h-full fixed shadow-2xl top-0 left-0 z-50"></div>
+      <div className="w-11/12 bg-[#017189] h-full fixed shadow-2xl top-0 left-0 z-50">
+        <div className="flex flex-col p-8">
+          <div className="text-center flex flex-row items-center justify-center">
+            <img src={geniopay} className="" width={200} />
+          </div>
+        </div>
+      </div>
       <nav className=" w-full bg-white-400 fixed pb-48">
         <div className="px-4 py-4 bg-white flex flex-row  items-center justify-between shadow-md">
           <div className="bg-white  shadow-lg rounded-full  p-4 text-center">
