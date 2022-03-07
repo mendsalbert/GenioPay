@@ -10,7 +10,7 @@ import Layout from "./components/Layout/Layout";
 const App = () => {
   return (
     <Layout>
-      <nav className=" w-full bg-white-400 ">
+      <nav className=" w-full bg-white-400 fixed pb-48">
         <div className="px-4 py-4 bg-white flex flex-row  items-center justify-between shadow-md">
           <div className="bg-white  shadow-lg rounded-full  p-4 text-center">
             <MenuAlt1Icon className="h-7 text-gray-700 cursor-pointer" />
@@ -41,7 +41,7 @@ const App = () => {
           </div>
         </div>
       </nav>
-      <main className="px-4">
+      <main className="px-4 pt-28">
         <div>
           <p className="text-center text-2xl text-gray-800 pt-5 font-bold">
             Welcome, Mends Albert
@@ -56,9 +56,32 @@ const App = () => {
           </div> */}
         </div>
         <div>
-          <p className="text-lg  text-gray-800 pt-5 pb-1 ">Wallet</p>
-          <PlusCircleIcon className="h-9 text-[#017189] pb-2 " />
-          <div className="bg-[#FFF6E6] rounded-sm w-full flex flex-col p-4 justify-between space-y-6">
+          <p className="text-lg  text-gray-800 pt-5 pb-1 font-bold ">Wallet</p>
+          <PlusCircleIcon className="h-12 text-[#017189] pb-2 " />
+          <div className="bg-[#FFF6E6] rounded-md w-full flex flex-col p-4 justify-between space-y-6">
+            <div className="flex flex-row justify-between items-center">
+              <div className="flex flex-col">
+                <p>Personal Account</p>
+                <p>USD</p>
+              </div>
+              <img src="/img/usd.png" />
+            </div>
+            <div>
+              <p className="font-bold text-2xl">$ 10,250.00</p>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <main className="px-4 ">
+        <div>
+          <p className="text-lg  text-gray-800 pt-5 pb-1 font-bold ">
+            Quick Links
+          </p>
+          <p className="text-md  text-gray-600 pt-1 pb-1 ">
+            Your frequently used actions for easy access
+          </p>
+          <div className="bg-[#FFF6E6] rounded-md w-full flex flex-col p-4 justify-between space-y-6">
             <div className="flex flex-row justify-between items-center">
               <div className="flex flex-col">
                 <p>Personal Account</p>
