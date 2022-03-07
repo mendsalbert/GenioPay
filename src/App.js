@@ -110,10 +110,30 @@ const App = () => {
             </div>
           </div>
 
-          <div>
+          <div className="mt-4 space-y-2">
             <div className="flex flex-row">
-              <img src={settings} className="fill-white" />
-              <p>Text</p>
+              <img src={settings} className="fill-white mr-4" />
+              <p className="text-white font-bold">Dashboard</p>
+            </div>
+            <div className="flex flex-row">
+              <img src={settings} className="fill-white mr-4" />
+              <p className="text-white font-bold">Wallet</p>
+            </div>
+            <div className="flex flex-row">
+              <img src={settings} className="fill-white mr-4" />
+              <p className="text-white font-bold">Cards</p>
+            </div>
+            <div className="flex flex-row">
+              <img src={settings} className="fill-white mr-4" />
+              <p className="text-white font-bold">FX centre</p>
+            </div>
+            <div className="flex flex-row">
+              <img src={settings} className="fill-white mr-4" />
+              <p className="text-white font-bold">Beneficiaries</p>
+            </div>
+            <div className="flex flex-row">
+              <img src={settings} className="fill-white mr-4" />
+              <p className="text-white font-bold">Perks</p>
             </div>
           </div>
         </div>
