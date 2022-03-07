@@ -18,6 +18,7 @@ import {
 } from "recharts";
 
 const App = () => {
+  const formatter = (value) => `$${value}K`;
   const data = [
     {
       name: "Jan",
@@ -28,19 +29,19 @@ const App = () => {
     {
       name: "Feb",
       uv: 2,
-      $: 1,
+      $: 2,
       amt: 20,
     },
     {
       name: "Mar",
       uv: 3,
-      $: 2,
+      $: 5,
       amt: 10,
     },
     {
       name: "Apr",
       uv: 3,
-      $: 1,
+      $: 3,
       amt: 10,
     },
   ];
@@ -209,7 +210,7 @@ const App = () => {
                 >
                   <CartesianGrid strokeDasharray="3 3" />
                   <XAxis dataKey="name" />
-                  <YAxis domain={[0, 4]} />
+                  <YAxis domain={[1, 5]} tickFormatter={formatter} />
                   <Tooltip />
                   <Area
                     type="monotone"
