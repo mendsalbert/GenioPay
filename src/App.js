@@ -305,7 +305,7 @@ const App = () => {
                 </div>
               </div>
               <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
-                <div className="flex items-center bg-gray-100 p-2 rounded-md shadow-md">
+                <div className="flex items-center  p-2 rounded-md shadow-md">
                   <img src={trans} className="w-16 mr-5" />
                   <div>
                     <p>Total transaction</p>
@@ -581,14 +581,14 @@ const App = () => {
                     </div>
                   </div>
                   <div className="flex flex-row justify-end space-x-2">
-                    <div className="flex items-center bg-gray-100 p-2 rounded-md shadow-md">
+                    <div className="flex items-center  p-2 rounded-md shadow-md">
                       <img src={trans} className="w-16 mr-5" />
                       <div>
                         <p>Total transaction</p>
                         <p className="font-bold">$88,666.00</p>
                       </div>
                     </div>
-                    <div className="flex items-center bg-gray-100 p-2 rounded-md shadow-md">
+                    <div className="flex items-center  p-2 rounded-md shadow-md">
                       <img src={payout} className="w-16 mr-5" />
                       <div>
                         <p>Pay-In</p>
@@ -596,7 +596,7 @@ const App = () => {
                       </div>
                     </div>
 
-                    <div className="flex items-center bg-gray-100 p-2 rounded-md shadow-md">
+                    <div className="flex items-center  p-2 rounded-md shadow-md">
                       <img src={payin} className="w-16 mr-5" />
                       <div>
                         <p>Pay-Out</p>
