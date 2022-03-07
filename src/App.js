@@ -69,7 +69,8 @@ const App = () => {
             </div>
 
             <div className="flex flex-row items-center pr-1 ">
-              <div className="bg-black w-8 h-8 rounded-full mr-1"></div>
+              {/* <div className="bg-black w-8 h-8 rounded-full mr-1"></div> */}
+              <img src="/img/avtr.png " className="w-14 h-10" />
               <div className="flex flex-col">
                 <p className="text-green-600 text-sm">verified</p>
                 <p className="text-md font-bold text-gray-800">Mends Albert</p>
