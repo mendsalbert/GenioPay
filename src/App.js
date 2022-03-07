@@ -131,11 +131,26 @@ const App = () => {
 
             <div className="text-lg font-bold">View transaction history</div>
 
-            <div className="grid grid-cols-1">
+            <div className="grid grid-cols-1 gap-3">
               <div className="flex items-center bg-gray-200 p-2 rounded-md shadow-md">
                 <img src={trans} className="w-16 mr-5" />
                 <div>
                   <p>Total transaction</p>
+                  <p className="font-bold">$88,666.00</p>
+                </div>
+              </div>
+              <div className="flex items-center bg-gray-200 p-2 rounded-md shadow-md">
+                <img src={trans} className="w-16 mr-5" />
+                <div>
+                  <p>Pay-In</p>
+                  <p className="font-bold">$88,666.00</p>
+                </div>
+              </div>
+
+              <div className="flex items-center bg-gray-200 p-2 rounded-md shadow-md">
+                <img src={trans} className="w-16 mr-5" />
+                <div>
+                  <p>Pay-Out</p>
                   <p className="font-bold">$88,666.00</p>
                 </div>
               </div>
