@@ -18,6 +18,10 @@ import payin from "./svgs/payin.svg";
 import payout from "./svgs/payout.svg";
 import plus from "./svgs/plus.svg";
 import geniopay from "./svgs/geniopay.svg";
+import star from "./svgs/star.svg";
+import wallet2 from "./svgs/wallet2.svg";
+import security from "./svgs/security.svg";
+
 import {
   AreaChart,
   Area,
@@ -62,7 +66,24 @@ const App = () => {
       <div className="w-11/12 bg-[#017189] h-full fixed shadow-2xl top-0 left-0 z-50">
         <div className="flex flex-col p-8">
           <div className="text-center flex flex-row items-center justify-center">
-            <img src={geniopay} className="" width={200} />
+            <img src={geniopay} className="" width={180} />
+          </div>
+          <div className="bg-[#9bd5e493] rounded-md flex flex-row p-4">
+            <div className="flex flex-row  items-center justify-between">
+              <div className="flex flex-row items-center">
+                <div>
+                  <img src={wallet2} />
+                </div>
+                <div>
+                  <p>fdfsf</p>
+                  <p>fdfsf</p>
+                </div>
+              </div>
+
+              <div>
+                <img src={security} />
+              </div>
+            </div>
           </div>
         </div>
       </div>
