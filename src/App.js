@@ -69,12 +69,12 @@ const App = () => {
 
   return (
     <Layout>
-      <div className="w-11/12 bg-[#017189] h-full fixed shadow-2xl top-0 left-0 z-50">
-        <div className="flex flex-col p-8">
+      <div className="w-11/12 bg-[#017189] overflow-auto h-full fixed shadow-2xl top-0 left-0 z-50">
+        <div className="flex flex-col p-6">
           <div className="text-center flex flex-row items-center justify-center pb-4">
             <img src={geniopay} className="" width={180} />
           </div>
-          <div className="bg-[#9bd5e493] rounded-md space-y-3 flex flex-col p-4 w-full">
+          <div className="bg-[#9bd5e44b] rounded-md space-y-3 flex flex-col p-4 w-full">
             <div className="flex flex-row  items-center justify-between w-full">
               <div className="flex flex-row items-center">
                 <div className="mr-3">
@@ -115,30 +115,45 @@ const App = () => {
             </div>
           </div>
 
-          <div className="mt-4 space-y-2">
+          <div className="mt-6 space-y-9">
             <div className="flex flex-row">
               <img src={settings} className=" mr-4" />
-              <p className="text-white font-bold">Dashboard</p>
+              <p className="text-white ">Dashboard</p>
             </div>
             <div className="flex flex-row">
-              <img src={settings} className="fill-white mr-4" />
-              <p className="text-white font-bold">Wallet</p>
+              <img src={wallet22} className="fill-white mr-4" />
+              <p className="text-white ">Wallet</p>
             </div>
             <div className="flex flex-row">
-              <img src={settings} className="fill-white mr-4" />
-              <p className="text-white font-bold">Cards</p>
+              <img src={card2} className="fill-white mr-4" />
+              <p className="text-white ">Cards</p>
             </div>
             <div className="flex flex-row">
-              <img src={settings} className="fill-white mr-4" />
-              <p className="text-white font-bold">FX centre</p>
+              <img src={dollarsquare} className="fill-white mr-4" />
+              <p className="text-white ">FX centre</p>
             </div>
             <div className="flex flex-row">
-              <img src={settings} className="fill-white mr-4" />
-              <p className="text-white font-bold">Beneficiaries</p>
+              <img src={profileuser} className="fill-white mr-4" />
+              <p className="text-white ">Beneficiaries</p>
             </div>
             <div className="flex flex-row">
-              <img src={settings} className="fill-white mr-4" />
-              <p className="text-white font-bold">Perks</p>
+              <img src={tag} className="fill-white mr-4" />
+              <p className="text-white ">Perks</p>
+            </div>
+          </div>
+
+          <div className="bg-[#FFF5E9] rounded-md mt-8 space-y-3 flex flex-col p-4 w-full">
+            <div>
+              <img src="/img/broadcast.png" />
+              <div>
+                <p>Refer and Earn</p>
+                <p>Use the link below to invite friends</p>
+              </div>
+            </div>
+            <div>
+              <div className="bg-[#017189] text-center w-full p-2 mr-2 text-white text-lg rounded-sm">
+                Pay-In
+              </div>
             </div>
           </div>
         </div>
