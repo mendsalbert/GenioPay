@@ -69,7 +69,7 @@ const App = () => {
 
   return (
     <Layout>
-      <div className="w-11/12 bg-[#017189] overflow-auto h-full fixed shadow-2xl top-0 left-0 z-50">
+      {/* <div className="w-11/12 bg-[#017189] overflow-auto h-full fixed shadow-2xl top-0 left-0 z-50">
         <div className="flex flex-col p-6">
           <div className="text-center flex flex-row items-center justify-center pb-4">
             <img src={geniopay} className="" width={180} />
@@ -100,9 +100,6 @@ const App = () => {
                   <p className="font-bold">$15,001.00</p>
                 </div>
               </div>
-              {/* <div>
-                <img src={security} />
-              </div> */}
             </div>
             <hr />
             <div className="flex flex-row items-center justify-between w-full text-center ">
@@ -159,7 +156,7 @@ const App = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <nav className=" w-full bg-white-400 fixed pb-48">
         <div className="px-4 py-4 bg-white flex flex-row  items-center justify-between shadow-md">
           <div className="bg-white  shadow-lg rounded-full  p-4 text-center">
