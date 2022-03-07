@@ -1,4 +1,8 @@
-import { ChevronDownIcon, MenuAlt1Icon } from "@heroicons/react/outline";
+import {
+  ChevronDownIcon,
+  MenuAlt1Icon,
+  SearchIcon,
+} from "@heroicons/react/outline";
 import React from "react";
 import Layout from "./components/Layout/Layout";
 
@@ -36,6 +40,21 @@ const App = () => {
           </div>
         </div>
       </nav>
+      <main className="px-4">
+        <div>
+          <p className="text-center text-2xl text-gray-800 pt-5">
+            Welcome, Mends Albert
+          </p>
+          {/* <div className="border-gray-300 border-2 w-full flex flex-row items-center rounded-xl ">
+            <SearchIcon className="h-6 text-gray-600  pl-2" />
+            <input
+              type="text"
+              placeholder="search"
+              className=" rounded-lg p-2 w-full bg-transparent text-lg font-Montserrat  focus:outline-none"
+            />
+          </div> */}
+        </div>
+      </main>
     </Layout>
   );
 };
