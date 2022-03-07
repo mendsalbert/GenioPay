@@ -7,7 +7,44 @@ import {
 import React from "react";
 import Layout from "./components/Layout/Layout";
 import trans from "./svgs/trans.svg";
+import {
+  AreaChart,
+  Area,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  ResponsiveContainer,
+} from "recharts";
+
 const App = () => {
+  const data = [
+    {
+      name: "Jan",
+      uv: 10,
+      $: 3,
+      amt: 30,
+    },
+    {
+      name: "Feb",
+      uv: 2,
+      $: 1,
+      amt: 20,
+    },
+    {
+      name: "Mar",
+      uv: 3,
+      $: 2,
+      amt: 10,
+    },
+    {
+      name: "Apr",
+      uv: 3,
+      $: 1,
+      amt: 10,
+    },
+  ];
+
   return (
     <Layout>
       <nav className=" w-full bg-white-400 fixed pb-48">
@@ -118,7 +155,7 @@ const App = () => {
         </div>
       </main>
 
-      <main className="px-4 ">
+      <main className="px-4 pt-6">
         <div>
           <div className="flex flex-col">
             <div className="flex flex-row items-center ">
@@ -156,7 +193,35 @@ const App = () => {
               </div>
             </div>
 
-            <div>..charts</div>
+            <div className="pt-9 pb-9">
+              <ResponsiveContainer width="100%" height={200}>
+                <AreaChart
+                  width={500}
+                  height={200}
+                  data={data}
+                  syncId="anyId"
+                  margin={{
+                    top: 10,
+                    right: 30,
+                    left: 0,
+                    bottom: 0,
+                  }}
+                >
+                  <CartesianGrid strokeDasharray="3 3" />
+                  <XAxis dataKey="name" />
+                  <YAxis domain={[0, 4]} />
+                  <Tooltip />
+                  <Area
+                    type="monotone"
+                    dataKey="$"
+                    // stroke="#82ca9d"
+                    stroke="#008aa8"
+                    strokeWidth={5}
+                    fill="#82ca9d"
+                  />
+                </AreaChart>
+              </ResponsiveContainer>
+            </div>
           </div>
         </div>
       </main>
