@@ -14,7 +14,9 @@ import momo from "./svgs/momo.svg";
 import voucher from "./svgs/voucher.svg";
 import link from "./svgs/link.svg";
 import card from "./svgs/card.svg";
-
+import payin from "./svgs/payin.svg";
+import payout from "./svgs/payout.svg";
+import plus from "./svgs/plus.svg";
 import {
   AreaChart,
   Area,
@@ -104,7 +106,8 @@ const App = () => {
         </div>
         <div>
           <p className="text-lg  text-gray-800 pt-5 pb-1 font-bold ">Wallet</p>
-          <PlusCircleIcon className="h-12 text-[#017189] pb-2 " />
+          {/* <PlusCircleIcon className="h-12 text-[#017189] pb-2 " /> */}
+          <img src={plus} className="w-10 pb-2" />
           <div className="bg-[#FFF6E6] rounded-md w-full flex flex-col p-4 justify-between space-y-6">
             <div className="flex flex-row justify-between items-center">
               <div className="flex flex-col">
@@ -168,15 +171,17 @@ const App = () => {
       <main className="px-4 pt-6">
         <div>
           <div className="flex flex-col">
-            <div className="flex flex-row items-center ">
+            <div className="flex flex-row items-center pb-3">
               <p className="font-bold text-lg mr-5"> Activity</p>
-              <div className=" flex flex-row items-center">
+              <div className=" flex flex-row items-center text-[#017189]">
                 <p>Month</p>
                 <ChevronDownIcon className="h-7 text-gray-700 cursor-pointer" />
               </div>
             </div>
 
-            <div className="text-lg font-bold">View transaction history</div>
+            <div className="text-lg font-bold pb-3 text-[#017189] cursor-pointer">
+              View transaction history
+            </div>
 
             <div className="grid grid-cols-1 gap-3">
               <div className="flex items-center bg-gray-200 p-2 rounded-md shadow-md">
@@ -187,7 +192,7 @@ const App = () => {
                 </div>
               </div>
               <div className="flex items-center bg-gray-200 p-2 rounded-md shadow-md">
-                <img src={trans} className="w-16 mr-5" />
+                <img src={payout} className="w-16 mr-5" />
                 <div>
                   <p>Pay-In</p>
                   <p className="font-bold">$88,666.00</p>
@@ -195,7 +200,7 @@ const App = () => {
               </div>
 
               <div className="flex items-center bg-gray-200 p-2 rounded-md shadow-md">
-                <img src={trans} className="w-16 mr-5" />
+                <img src={payin} className="w-16 mr-5" />
                 <div>
                   <p>Pay-Out</p>
                   <p className="font-bold">$88,666.00</p>
