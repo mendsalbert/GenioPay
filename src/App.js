@@ -21,6 +21,7 @@ import geniopay from "./svgs/geniopay.svg";
 import star from "./svgs/star.svg";
 import wallet2 from "./svgs/wallet2.svg";
 import security from "./svgs/security.svg";
+import settings from "./svgs/settings.svg";
 
 import {
   AreaChart,
@@ -106,6 +107,13 @@ const App = () => {
               <div className="bg-white text-center w-6/12 p-2 text-[#2B899D] text-lg rounded-sm">
                 Pay-Out
               </div>
+            </div>
+          </div>
+
+          <div>
+            <div className="flex flex-row">
+              <img src={settings} className="fill-white" />
+              <p>Text</p>
             </div>
           </div>
         </div>
