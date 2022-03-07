@@ -435,9 +435,9 @@ const App = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div>
-          <p>others</p>
+          <div className="w-9/12">
+            <div className="w-full bg-red-400 h-50">ffdsf</div>
+          </div>
         </div>
       </div>
       {/* </div> */}
