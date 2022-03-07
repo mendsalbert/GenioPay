@@ -115,44 +115,46 @@ const App = () => {
             </div>
           </div>
 
-          <div className="mt-6 space-y-9">
+          <div className="mt-10 space-y-9">
             <div className="flex flex-row">
-              <img src={settings} className=" mr-4" />
+              <img src={settings} className=" w-6 mr-4" />
               <p className="text-white ">Dashboard</p>
             </div>
             <div className="flex flex-row">
-              <img src={wallet22} className="fill-white mr-4" />
+              <img src={wallet22} className="fill-white w-6 mr-4" />
               <p className="text-white ">Wallet</p>
             </div>
             <div className="flex flex-row">
-              <img src={card2} className="fill-white mr-4" />
+              <img src={card2} className="fill-white w-6 mr-4" />
               <p className="text-white ">Cards</p>
             </div>
             <div className="flex flex-row">
-              <img src={dollarsquare} className="fill-white mr-4" />
+              <img src={dollarsquare} className="fill-white w-6 mr-4" />
               <p className="text-white ">FX centre</p>
             </div>
             <div className="flex flex-row">
-              <img src={profileuser} className="fill-white mr-4" />
+              <img src={profileuser} className="fill-white w-6 mr-4" />
               <p className="text-white ">Beneficiaries</p>
             </div>
             <div className="flex flex-row">
-              <img src={tag} className="fill-white mr-4" />
+              <img src={tag} className="fill-white w-6 mr-4" />
               <p className="text-white ">Perks</p>
             </div>
           </div>
 
           <div className="bg-[#FFF5E9] rounded-md mt-8 space-y-3 flex flex-col p-4 w-full">
-            <div>
-              <img src="/img/broadcast.png" />
+            <div className="flex flex-row ">
+              <img src="/img/broadcast.png" width={100} />
               <div>
-                <p>Refer and Earn</p>
-                <p>Use the link below to invite friends</p>
+                <p className="font-bold text-lg">Refer and Earn</p>
+                <p className="text-gray-700">
+                  Use the link below to invite friends
+                </p>
               </div>
             </div>
             <div>
               <div className="bg-[#017189] text-center w-full p-2 mr-2 text-white text-lg rounded-sm">
-                Pay-In
+                Invites Friends
               </div>
             </div>
           </div>
