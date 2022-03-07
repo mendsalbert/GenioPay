@@ -22,6 +22,11 @@ import star from "./svgs/star.svg";
 import wallet2 from "./svgs/wallet2.svg";
 import security from "./svgs/security.svg";
 import settings from "./svgs/settings.svg";
+import wallet22 from "./svgs/wallet-2.svg";
+import card2 from "./svgs/card-2.svg";
+import dollarsquare from "./svgs/dollar-square.svg";
+import profileuser from "./svgs/profile-2user.svg";
+import tag from "./svgs/tag.svg";
 
 import {
   AreaChart,
@@ -112,7 +117,7 @@ const App = () => {
 
           <div className="mt-4 space-y-2">
             <div className="flex flex-row">
-              <img src={settings} className="fill-white mr-4" />
+              <img src={settings} className=" mr-4" />
               <p className="text-white font-bold">Dashboard</p>
             </div>
             <div className="flex flex-row">
