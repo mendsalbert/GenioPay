@@ -68,15 +68,15 @@ const App = () => {
           <div className="text-center flex flex-row items-center justify-center">
             <img src={geniopay} className="" width={180} />
           </div>
-          <div className="bg-[#9bd5e493] rounded-md flex flex-row p-4">
-            <div className="flex flex-row  items-center justify-between">
+          <div className="bg-[#9bd5e493] rounded-md flex flex-row p-4 w-full">
+            <div className="flex flex-row  items-center justify-between w-full">
               <div className="flex flex-row items-center">
-                <div>
+                <div className="mr-3">
                   <img src={wallet2} />
                 </div>
-                <div>
-                  <p>fdfsf</p>
-                  <p>fdfsf</p>
+                <div className="text-white">
+                  <p>Wallet Balance</p>
+                  <p className="font-bold">$15,001.00</p>
                 </div>
               </div>
 
