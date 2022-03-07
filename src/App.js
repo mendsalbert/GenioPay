@@ -1,6 +1,7 @@
 import {
   ChevronDownIcon,
   MenuAlt1Icon,
+  PlusCircleIcon,
   SearchIcon,
 } from "@heroicons/react/outline";
 import React from "react";
@@ -42,7 +43,7 @@ const App = () => {
       </nav>
       <main className="px-4">
         <div>
-          <p className="text-center text-2xl text-gray-800 pt-5">
+          <p className="text-center text-2xl text-gray-800 pt-5 font-bold">
             Welcome, Mends Albert
           </p>
           {/* <div className="border-gray-300 border-2 w-full flex flex-row items-center rounded-xl ">
@@ -53,6 +54,22 @@ const App = () => {
               className=" rounded-lg p-2 w-full bg-transparent text-lg font-Montserrat  focus:outline-none"
             />
           </div> */}
+        </div>
+        <div>
+          <p className="text-lg  text-gray-800 pt-5 pb-1 ">Wallet</p>
+          <PlusCircleIcon className="h-9 text-[#017189] pb-2 " />
+          <div className="bg-[#FFF6E6] rounded-sm w-full flex flex-col p-4 justify-between space-y-6">
+            <div className="flex flex-row justify-between items-center">
+              <div className="flex flex-col">
+                <p>Personal Account</p>
+                <p>USD</p>
+              </div>
+              <img src="/img/usd.png" />
+            </div>
+            <div>
+              <p className="font-bold text-2xl">$ 10,250.00</p>
+            </div>
+          </div>
         </div>
       </main>
     </Layout>
