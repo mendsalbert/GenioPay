@@ -1,4 +1,4 @@
-import { MenuAlt1Icon } from "@heroicons/react/outline";
+import { ChevronDownIcon, MenuAlt1Icon } from "@heroicons/react/outline";
 import React from "react";
 import Layout from "./components/Layout/Layout";
 
@@ -10,10 +10,10 @@ const App = () => {
           <div className="bg-white  shadow-lg rounded-full  p-4 text-center">
             <MenuAlt1Icon className="h-7 text-gray-700 cursor-pointer" />
           </div>
-          <div className=" flex items-center">
+          <div className=" flex items-center justify-start space-x-2">
             <div className="flex flex-col items-center">
               <img src="/img/upload.png" />
-              <p>0 Planted</p>
+              {/* <p>0 Planted</p> */}
             </div>
 
             <div className="relative">
@@ -25,7 +25,14 @@ const App = () => {
               </div>
             </div>
 
-            <span>AVRT</span>
+            <div className="flex flex-row items-center pr-1 ">
+              <div className="bg-black w-8 h-8 rounded-full mr-1"></div>
+              <div className="flex flex-col">
+                <p className="text-green-600 text-sm">verified</p>
+                <p className="text-md font-bold text-gray-800">Mends Albert</p>
+              </div>
+              {/* <ChevronDownIcon className="h-7 text-gray-700 cursor-pointer" /> */}
+            </div>
           </div>
         </div>
       </nav>
