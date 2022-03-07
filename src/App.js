@@ -15,9 +15,16 @@ const App = () => {
               <img src="/img/upload.png" />
               <p>0 Planted</p>
             </div>
-            <span>D/L</span>
-            <span>UPLOAD</span>
-            <span>NOTIF</span>
+
+            <div className="relative">
+              <img src="img/notification.png" />
+              <div className=" absolute -top-2 -right-1 ">
+                <span class="absolute right-0 top-0 rounded-full bg-red-600 w-4 h-4 top right p-0 m-0 text-white  text-sm  leading-tight text-center">
+                  5
+                </span>
+              </div>
+            </div>
+
             <span>AVRT</span>
           </div>
         </div>
