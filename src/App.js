@@ -65,10 +65,10 @@ const App = () => {
     <Layout>
       <div className="w-11/12 bg-[#017189] h-full fixed shadow-2xl top-0 left-0 z-50">
         <div className="flex flex-col p-8">
-          <div className="text-center flex flex-row items-center justify-center">
+          <div className="text-center flex flex-row items-center justify-center pb-4">
             <img src={geniopay} className="" width={180} />
           </div>
-          <div className="bg-[#9bd5e493] rounded-md flex flex-row p-4 w-full">
+          <div className="bg-[#9bd5e493] rounded-md space-y-3 flex flex-col p-4 w-full">
             <div className="flex flex-row  items-center justify-between w-full">
               <div className="flex flex-row items-center">
                 <div className="mr-3">
@@ -79,9 +79,32 @@ const App = () => {
                   <p className="font-bold">$15,001.00</p>
                 </div>
               </div>
-
               <div>
                 <img src={security} />
+              </div>
+            </div>
+            <hr />
+            <div className="flex flex-row  items-center justify-between w-full">
+              <div className="flex flex-row items-center">
+                <div className="mr-3">
+                  <img src={star} />
+                </div>
+                <div className="text-white">
+                  <p>Wallet Balance</p>
+                  <p className="font-bold">$15,001.00</p>
+                </div>
+              </div>
+              {/* <div>
+                <img src={security} />
+              </div> */}
+            </div>
+            <hr />
+            <div className="flex flex-row items-center justify-between w-full text-center ">
+              <div className="bg-[#FDA4AF] text-center w-6/12 p-2 mr-2 text-white text-lg rounded-sm">
+                Pay-In
+              </div>
+              <div className="bg-white text-center w-6/12 p-2 text-[#2B899D] text-lg rounded-sm">
+                Pay-Out
               </div>
             </div>
           </div>
