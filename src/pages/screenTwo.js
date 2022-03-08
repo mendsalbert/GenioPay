@@ -231,6 +231,50 @@ const ScreenOne = () => {
               <p>Inactive(2)</p>
               <p>close(0)</p>
             </div>
+
+            <div className="flex flex-col pt-5 space-y-3">
+              <div className="flex flex-row justify-between w-full">
+                <div className="flex flex-row space-x-2">
+                  <img src="/img/euro.png" className="rounded-full" />
+                  <div className="flex flex-col">
+                    <span className="text-sm">EUR Wallet</span>
+                    <span className="text-sm">EUR</span>
+                  </div>
+                </div>
+                <div className="flex flex-col text-right">
+                  <span className="font-bold">&euro; 2,000,000.00</span>
+                  <span className="text-sm">Default</span>
+                </div>
+              </div>
+
+              <div className="flex flex-row justify-between w-full">
+                <div className="flex flex-row space-x-2">
+                  <img src="/img/usd.png" className="rounded-full" />
+                  <div className="flex flex-col">
+                    <span className="text-sm">Personal Account</span>
+                    <span className="text-sm">USD</span>
+                  </div>
+                </div>
+                <div className="flex flex-col text-right">
+                  <span className="font-bold">&#36; 10,250.00</span>
+                  {/* <span className="text-sm">Default</span> */}
+                </div>
+              </div>
+
+              <div className="flex flex-row justify-between w-full">
+                <div className="flex flex-row space-x-2">
+                  <img src="/img/uk.png" className="rounded-full" />
+                  <div className="flex flex-col">
+                    <span className="text-sm">School Savings</span>
+                    <span className="text-sm">GDP</span>
+                  </div>
+                </div>
+                <div className="flex flex-col text-right">
+                  <span className="font-bold">&#163; 500.00</span>
+                  {/* <span className="text-sm">Default</span> */}
+                </div>
+              </div>
+            </div>
           </div>
         </main>
 
