@@ -98,10 +98,14 @@ const App = () => {
         {toggle ? (
           <div className="w-11/12  bg-[#017189] md:hidden overflow-auto h-full fixed shadow-2xl top-0 left-0 z-50">
             <div className="flex flex-col p-6 relative">
-              <div>
-                <XIcon className="text-white h-7 absolute top-0 right-0 p-5" />
+              <div
+                onClick={() => {
+                  toggleNav();
+                }}
+              >
+                <XIcon className="text-white h-9 absolute top-0 right-0 m-2 mb-10" />
               </div>
-              <div className="text-center flex flex-row items-center justify-center pb-4">
+              <div className=" mt-9 text-center flex flex-row items-center justify-center pb-4">
                 <img src={geniopay} className="" width={180} />
               </div>
               <div className="bg-[#9bd5e44b] rounded-md space-y-3 flex flex-col p-4 w-full">
