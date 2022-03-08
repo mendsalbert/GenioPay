@@ -1,15 +1,14 @@
 import React, { useState } from "react";
-import ScreenOne from "./pages/screenOne";
 import { Routes, Route, Link } from "react-router-dom";
+import ScreenOne from "./pages/screenOne";
+import ScreenTwo from "./pages/screenTwo";
 const App = () => {
   return (
     <Routes>
       <Route path="/" element={<ScreenOne />} />
-      <Route path="wallet" element={<About />} />
+      <Route path="wallet" element={<ScreenTwo />} />
     </Routes>
   );
-
-  // <ScreenOne />;
 };
 
 function About() {

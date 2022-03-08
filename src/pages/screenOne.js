@@ -39,7 +39,7 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const ScreenOne = () => {
   const [toggle, setToggle] = useState(false);
@@ -147,10 +147,11 @@ const ScreenOne = () => {
               </div>
 
               <div className="mt-10 space-y-9">
-                <div className="flex flex-row">
-                  <img src={settings} className=" w-6 mr-4" />
-                  <p className="text-white ">
+                <div className="flex flex-row bg-white p-4 rounded-md">
+                  <img src={Grid} className=" w-6 mr-4" />
+                  <p className="text-[#017189] font-bold">
                     <Link to="/">Dashboard</Link>
+                    {/* <NavLink to='/'>Dashboard</NavLink> */}
                   </p>
                 </div>
                 <div className="flex flex-row">
@@ -440,7 +441,9 @@ const ScreenOne = () => {
               <div className="mt-10 space-y-9">
                 <div className="flex flex-row bg-white p-4 rounded-md">
                   <img src={Grid} className=" w-6 mr-4" />
-                  <p className="text-[#017189] font-bold ">Dashboard</p>
+                  <p className="text-[#017189] font-bold ">
+                    <Link to="/">Dashboard</Link>
+                  </p>
                 </div>
                 <div className="flex flex-row">
                   <img src={wallet22} className="fill-white w-6 mr-4" />
