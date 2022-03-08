@@ -148,9 +148,9 @@ const ScreenOne = () => {
               </div>
 
               <div className="mt-10 space-y-9">
-                <div className="flex flex-row bg-white p-4 rounded-md">
-                  <img src={Grid} className=" w-6 mr-4" />
-                  <p className="text-[#017189] font-bold">
+                <div className="flex flex-row ">
+                  <img src={settings} className=" w-6 mr-4" />
+                  <p className="text-white">
                     <Link to="/">Dashboard</Link>
                     {/* <NavLink to='/'>Dashboard</NavLink> */}
                   </p>
@@ -158,7 +158,7 @@ const ScreenOne = () => {
                 <div className="flex flex-row bg-white p-4 rounded-md">
                   <img src={wallet_active} className="fill-white w-6 mr-4" />
 
-                  <p className="text-[#017189]">
+                  <p className="text-[#017189] font-bold">
                     <Link to="/wallet">Wallet</Link>
                   </p>
                 </div>

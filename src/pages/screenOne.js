@@ -447,7 +447,9 @@ const ScreenOne = () => {
                 </div>
                 <div className="flex flex-row">
                   <img src={wallet22} className="fill-white w-6 mr-4" />
-                  <p className="text-white ">Wallet</p>
+                  <p className="text-white ">
+                    <Link to="/wallet">Wallet</Link>
+                  </p>
                 </div>
                 <div className="flex flex-row">
                   <img src={card2} className="fill-white w-6 mr-4" />
