@@ -96,7 +96,7 @@ const ScreenOne = () => {
     <Layout>
       <div className="lg:hidden ">
         {toggle ? (
-          <div className="w-11/12  bg-[#017189] md:hidden overflow-auto h-full fixed shadow-2xl top-0 left-0 z-50">
+          <div className="w-11/12  bg-[#017189] lg:hidden overflow-auto h-full fixed shadow-2xl top-0 left-0 z-50">
             <div className="flex flex-col p-6 relative">
               <div
                 onClick={() => {
