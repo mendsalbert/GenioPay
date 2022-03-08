@@ -361,7 +361,6 @@ const ScreenOne = () => {
                           <span className="font-bold text-[#16A34A]">
                             &euro;750.65
                           </span>
-                          {/* <span className="text-sm">Default</span> */}
                         </div>
                       </div>
                     </div>
