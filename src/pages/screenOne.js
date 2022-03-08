@@ -5,7 +5,7 @@ import {
   SearchIcon,
   XIcon,
 } from "@heroicons/react/outline";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Layout from "../components/Layout/Layout";
 import trans from "../svgs/trans.svg";
 import wallet from "../svgs/wallet.svg";
@@ -42,10 +42,16 @@ import {
 import { Link, NavLink } from "react-router-dom";
 
 const ScreenOne = () => {
+  const toggleRef = useRef(null);
   const [toggle, setToggle] = useState(false);
   const toggleNav = () => {
+    toggleRef.current.style.width = "90%";
     setToggle(!toggle);
     console.log(toggle);
+  };
+
+  const closeMenu = () => {
+    toggleRef.current.style.width = "0%";
   };
   const formatter = (value) => `$${value}K`;
   const data = [
@@ -95,111 +101,114 @@ const ScreenOne = () => {
   return (
     <Layout>
       <div className="lg:hidden ">
-        {toggle ? (
-          <div className="w-11/12  bg-[#017189] lg:hidden overflow-auto h-full fixed shadow-2xl top-0 left-0 z-50">
-            <div className="flex flex-col p-6 relative">
-              <div
-                onClick={() => {
-                  toggleNav();
-                }}
-              >
-                <XIcon className="text-white h-9 absolute top-0 right-0 m-2 mb-10" />
-              </div>
-              <div className=" mt-9 text-center flex flex-row items-center justify-center pb-4">
-                <img src={geniopay} className="" width={180} />
-              </div>
-              <div className="bg-[#9bd5e44b] rounded-md space-y-3 flex flex-col p-4 w-full">
-                <div className="flex flex-row  items-center justify-between w-full">
-                  <div className="flex flex-row items-center">
-                    <div className="mr-3">
-                      <img src={wallet2} />
-                    </div>
-                    <div className="text-white">
-                      <p>Wallet Balance</p>
-                      <p className="font-bold">$15,001.00</p>
-                    </div>
+        {/* {toggle ? ( */}
+        <div
+          ref={toggleRef}
+          className="w-0 transition-all bg-[#017189] lg:hidden overflow-auto h-full fixed shadow-2xl top-0 left-0 z-50"
+        >
+          <div className="flex flex-col p-6 relative">
+            <div
+              onClick={() => {
+                closeMenu();
+              }}
+            >
+              <XIcon className="text-white h-9 absolute top-0 right-0 m-2 mb-10" />
+            </div>
+            <div className=" mt-9 text-center flex flex-row items-center justify-center pb-4">
+              <img src={geniopay} className="" width={180} />
+            </div>
+            <div className="bg-[#9bd5e44b] rounded-md space-y-3 flex flex-col p-4 w-full">
+              <div className="flex flex-row  items-center justify-between w-full">
+                <div className="flex flex-row items-center">
+                  <div className="mr-3">
+                    <img src={wallet2} />
                   </div>
-                  <div>
-                    <img src={security} />
-                  </div>
-                </div>
-                <hr />
-                <div className="flex flex-row  items-center justify-between w-full">
-                  <div className="flex flex-row items-center">
-                    <div className="mr-3">
-                      <img src={star} />
-                    </div>
-                    <div className="text-white">
-                      <p>Wallet Balance</p>
-                      <p className="font-bold">$15,001.00</p>
-                    </div>
-                  </div>
-                </div>
-                <hr />
-                <div className="flex flex-row items-center justify-between w-full text-center ">
-                  <div className="bg-[#FDA4AF] text-center w-6/12 p-2 mr-2 text-white text-lg rounded-sm">
-                    Pay-In
-                  </div>
-                  <div className="bg-white text-center w-6/12 p-2 text-[#2B899D] text-lg rounded-sm">
-                    Pay-Out
-                  </div>
-                </div>
-              </div>
-
-              <div className="mt-10 space-y-9">
-                <div className="flex flex-row bg-white p-4 rounded-md">
-                  <img src={Grid} className=" w-6 mr-4" />
-                  <p className="text-[#017189] font-bold">
-                    <Link to="/">Dashboard</Link>
-                    {/* <NavLink to='/'>Dashboard</NavLink> */}
-                  </p>
-                </div>
-                <div className="flex flex-row">
-                  <img src={wallet22} className="fill-white w-6 mr-4" />
-
-                  <p className="text-white ">
-                    <Link to="/wallet">Wallet</Link>
-                  </p>
-                </div>
-                <div className="flex flex-row">
-                  <img src={card2} className="fill-white w-6 mr-4" />
-                  <p className="text-white ">Cards</p>
-                </div>
-                <div className="flex flex-row">
-                  <img src={dollarsquare} className="fill-white w-6 mr-4" />
-                  <p className="text-white ">FX centre</p>
-                </div>
-                <div className="flex flex-row">
-                  <img src={profileuser} className="fill-white w-6 mr-4" />
-                  <p className="text-white ">Beneficiaries</p>
-                </div>
-                <div className="flex flex-row">
-                  <img src={tag} className="fill-white w-6 mr-4" />
-                  <p className="text-white ">Perks</p>
-                </div>
-              </div>
-
-              <div className="bg-[#FFF5E9] rounded-md mt-8 space-y-3 flex flex-col p-4 w-full">
-                <div className="flex flex-row ">
-                  <img src="/img/broadcast.png" width={100} />
-                  <div>
-                    <p className="font-bold text-lg">Refer and Earn</p>
-                    <p className="text-gray-700">
-                      Use the link below to invite friends
-                    </p>
+                  <div className="text-white">
+                    <p>Wallet Balance</p>
+                    <p className="font-bold">$15,001.00</p>
                   </div>
                 </div>
                 <div>
-                  <div className="bg-[#017189] text-center w-full p-2 mr-2 text-white text-lg rounded-sm">
-                    Invites Friends
+                  <img src={security} />
+                </div>
+              </div>
+              <hr />
+              <div className="flex flex-row  items-center justify-between w-full">
+                <div className="flex flex-row items-center">
+                  <div className="mr-3">
+                    <img src={star} />
                   </div>
+                  <div className="text-white">
+                    <p>Wallet Balance</p>
+                    <p className="font-bold">$15,001.00</p>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div className="flex flex-row items-center justify-between w-full text-center ">
+                <div className="bg-[#FDA4AF] text-center w-6/12 p-2 mr-2 text-white text-lg rounded-sm">
+                  Pay-In
+                </div>
+                <div className="bg-white text-center w-6/12 p-2 text-[#2B899D] text-lg rounded-sm">
+                  Pay-Out
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-10 space-y-9">
+              <div className="flex flex-row bg-white p-4 rounded-md">
+                <img src={Grid} className=" w-6 mr-4" />
+                <p className="text-[#017189] font-bold">
+                  <Link to="/">Dashboard</Link>
+                  {/* <NavLink to='/'>Dashboard</NavLink> */}
+                </p>
+              </div>
+              <div className="flex flex-row">
+                <img src={wallet22} className="fill-white w-6 mr-4" />
+
+                <p className="text-white ">
+                  <Link to="/wallet">Wallet</Link>
+                </p>
+              </div>
+              <div className="flex flex-row">
+                <img src={card2} className="fill-white w-6 mr-4" />
+                <p className="text-white ">Cards</p>
+              </div>
+              <div className="flex flex-row">
+                <img src={dollarsquare} className="fill-white w-6 mr-4" />
+                <p className="text-white ">FX centre</p>
+              </div>
+              <div className="flex flex-row">
+                <img src={profileuser} className="fill-white w-6 mr-4" />
+                <p className="text-white ">Beneficiaries</p>
+              </div>
+              <div className="flex flex-row">
+                <img src={tag} className="fill-white w-6 mr-4" />
+                <p className="text-white ">Perks</p>
+              </div>
+            </div>
+
+            <div className="bg-[#FFF5E9] rounded-md mt-8 space-y-3 flex flex-col p-4 w-full">
+              <div className="flex flex-row ">
+                <img src="/img/broadcast.png" width={100} />
+                <div>
+                  <p className="font-bold text-lg">Refer and Earn</p>
+                  <p className="text-gray-700">
+                    Use the link below to invite friends
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div className="bg-[#017189] text-center w-full p-2 mr-2 text-white text-lg rounded-sm">
+                  Invites Friends
                 </div>
               </div>
             </div>
           </div>
-        ) : (
+        </div>
+        {/* ) : (
           ""
-        )}
+        )} */}
 
         <nav className=" w-full bg-white-400 fixed pb-48 lg:hidden">
           <div className="px-4 sm:px-10 py-4 bg-white flex flex-row  items-center justify-between shadow-md">

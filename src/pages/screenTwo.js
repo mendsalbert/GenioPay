@@ -625,7 +625,7 @@ const ScreenOne = () => {
                       <span className="text-[#0A6375] font-bold">EUR</span>
                     </div>
                     <div>
-                      <p className="text-4xl font-bold">&#163;2,000,000.50</p>
+                      <p className="text-4xl font-bold">&euro;2,000,000.50</p>
                     </div>
                   </div>
                 </div>
