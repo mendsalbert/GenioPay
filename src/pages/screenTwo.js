@@ -246,7 +246,12 @@ const ScreenOne = () => {
                   <span className="text-sm">Default</span>
                 </div>
               </div>
+              {/* Euro wallets active */}
 
+              <div className="bg-white shadow-sm">
+                <div className="border-2"></div>
+              </div>
+              {/* Euro wallets active */}
               <div className="flex flex-row justify-between w-full">
                 <div className="flex flex-row space-x-2">
                   <img src="/img/usd.png" className="rounded-full" />
