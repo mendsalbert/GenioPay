@@ -510,7 +510,7 @@ const ScreenOne = () => {
                   />
                 </div>
                 <div className=" ml-5 flex items-center justify-start space-x-2">
-                  <div className="flex flex-col justify-center items-center">
+                  <div className="flex flex-row space-x-2 justify-center items-center">
                     <img src="/img/upload.png" />
                     <p>0 planted</p>
                   </div>
