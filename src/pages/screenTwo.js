@@ -38,7 +38,7 @@ import icon2 from "../svgs/icon2.svg";
 import icon3 from "../svgs/icon3.svg";
 import icon4 from "../svgs/icon4.svg";
 import icon5 from "../svgs/icon5.svg";
-
+import payinvoucher from "../svgs/payinvoucher.svg";
 const ScreenOne = () => {
   const [toggle, setToggle] = useState(false);
   const toggleNav = () => {
@@ -327,6 +327,44 @@ const ScreenOne = () => {
                   <div className="flex flex-row items-center">
                     <img src={icon5} className="fill-white  mr-4" />
                     <p className="text-gray-700">Wallet Information</p>
+                  </div>
+                </div>
+
+                <div>
+                  <div className="flex flex-row pb-5 pt-5 justify-between">
+                    <p className="">Activity</p>
+                    <p className="border-b-4 border-[#017189] font-bold">
+                      Transactions
+                    </p>
+                    <p>Invoices</p>
+                  </div>
+                </div>
+
+                <div className="flex flex-col  justify-between">
+                  <div className="flex flex-col ">
+                    <div className="flex flex-row items-center justify-between ">
+                      <p className="text-gray-600">22 Jul, 2022</p>
+                      <p className="font-bold text-md text-[#0A6375]">
+                        View All
+                      </p>
+                    </div>
+                    <div className="flex flex-row items-center justify-between">
+                      <div className=" bg-white py-4 px-1 rounded-md flex flex-row justify-between w-full">
+                        <div className="flex flex-row space-x-2">
+                          <img src={payinvoucher} className="rounded-full" />
+                          <div className="flex flex-col">
+                            <span className="text-sm">Pay In-Voucher</span>
+                            <span className="text-sm">EUR wallet</span>
+                          </div>
+                        </div>
+                        <div className="flex flex-col text-right">
+                          <span className="font-bold text-[#16A34A]">
+                            &euro;750.65
+                          </span>
+                          {/* <span className="text-sm">Default</span> */}
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
