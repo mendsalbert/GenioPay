@@ -206,7 +206,7 @@ const ScreenOne = () => {
               </span>
               Create new wallet
             </div>
-            <p className="text-center text-2xl  sm:text-3xl text-gray-800 pt-5 font-bold">
+            <p className="text-left text-2xl  sm:text-3xl text-gray-800 pt-5 font-bold">
               Your wallet (s)
             </p>
           </div>
@@ -226,14 +226,14 @@ const ScreenOne = () => {
               </div>
             </div>
 
-            <div className="flex flex-row justify-between">
+            <div className="flex flex-row pb-5 pt-5 justify-between">
               <p className="border-b-4 border-[#017189]">Active(3)</p>
               <p>Inactive(2)</p>
               <p>close(0)</p>
             </div>
 
-            <div className="flex flex-col pt-5 space-y-3">
-              <div className="flex flex-row justify-between w-full">
+            <div className="flex flex-col pt-8 space-y-9">
+              <div className=" bg-[#EEF7F9] py-4 px-1 rounded-md flex flex-row justify-between w-full">
                 <div className="flex flex-row space-x-2">
                   <img src="/img/euro.png" className="rounded-full" />
                   <div className="flex flex-col">
