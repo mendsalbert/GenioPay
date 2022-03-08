@@ -27,6 +27,7 @@ import card2 from "./svgs/card-2.svg";
 import dollarsquare from "./svgs/dollar-square.svg";
 import profileuser from "./svgs/profile-2user.svg";
 import tag from "./svgs/tag.svg";
+import Grid from "./svgs/Grid.svg";
 
 import {
   AreaChart,
@@ -198,10 +199,10 @@ const App = () => {
               <div className="flex flex-row items-center pr-1 ">
                 <img src="/img/avtr.png " className="w-14 h-10" />
                 <div className="flex flex-col">
-                  <p className="text-green-600 text-sm">verified</p>
+                  {/* <p className="text-green-600 text-sm">verified</p>
                   <p className="text-md font-bold text-gray-800">
                     Mends Albert
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>
@@ -252,7 +253,7 @@ const App = () => {
               Your frequently used actions for easy access
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-              <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-6">
+              <div className="white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-6">
                 <img src={wallet} className="w-10" />
 
                 <p className="text-gray-500  ">Add new Wallet</p>
@@ -368,7 +369,7 @@ const App = () => {
             {/* <div className="w-11/12 bg-[#017189] md:hidden overflow-auto h-full fixed shadow-2xl top-0 left-0 z-50"> */}
             <div className="flex flex-col p-6">
               <div className="text-center flex flex-row items-center justify-center pb-4">
-                <img src={geniopay} className="" width={140} />
+                <img src={geniopay} className="" width={160} />
               </div>
               <div className="bg-[#9bd5e44b] rounded-md space-y-3 flex flex-col p-4 w-full">
                 <div className="flex flex-row  items-center justify-between w-full">
@@ -409,9 +410,9 @@ const App = () => {
               </div>
 
               <div className="mt-10 space-y-9">
-                <div className="flex flex-row">
-                  <img src={settings} className=" w-6 mr-4" />
-                  <p className="text-white ">Dashboard</p>
+                <div className="flex flex-row bg-white p-4 rounded-md">
+                  <img src={Grid} className=" w-6 mr-4" />
+                  <p className="text-[#017189] font-bold ">Dashboard</p>
                 </div>
                 <div className="flex flex-row">
                   <img src={wallet22} className="fill-white w-6 mr-4" />
@@ -515,7 +516,7 @@ const App = () => {
                     <p className="font-bold text-2xl">$ 10,250.00</p>
                   </div>
                 </div>
-                <img src={plus} className="w-10 pb-2 sm:ml-4" />
+                <img src={plus} className="w-10 pb-2 cursor-pointer" />
               </div>
             </div>
 
