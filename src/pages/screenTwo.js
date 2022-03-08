@@ -2,6 +2,7 @@ import {
   ChevronDownIcon,
   MenuAlt1Icon,
   PlusCircleIcon,
+  PlusIcon,
   SearchIcon,
   XIcon,
 } from "@heroicons/react/outline";
@@ -199,31 +200,36 @@ const ScreenOne = () => {
                 className=" rounded-lg p-2 w-full bg-transparent text-lg font-Montserrat  focus:outline-none"
               />
             </div>
-            <div className="bg-[#017189] text-center w-5/12 my-3 p-2 mr-2 text-white text-lg rounded-lg">
-              New wallet
+            <div className="bg-[#017189] flex flex-row items-center text-center w-8/12 my-3 p-2 mr-2 text-white text-lg rounded-lg">
+              <span>
+                <PlusIcon className="h-5 mr-1 text-white" />
+              </span>
+              Create new wallet
             </div>
             <p className="text-center text-2xl  sm:text-3xl text-gray-800 pt-5 font-bold">
               Your wallet (s)
             </p>
           </div>
           <div className="">
-            <p className="text-xl text-gray-800 pt-5 pb-1 font-bold sm:text-2xl ">
-              Wallet
-            </p>
-            <div className="sm:flex sm:flex-row-reverse">
-              <img src={plus} className="w-10 pb-2 sm:ml-4" />
-              <div className="bg-[#FFF6E6] rounded-md w-full sm:w-6/12 flex flex-col p-4 justify-between space-y-6">
-                <div className="flex flex-row justify-between items-center">
-                  <div className="flex flex-col">
-                    <p>Personal Account</p>
-                    <p>USD</p>
-                  </div>
-                  <img src="/img/usd.png" />
-                </div>
-                <div>
-                  <p className="font-bold text-2xl">$ 10,250.00</p>
-                </div>
+            <div className="flex flex-row items-center space-x-3 my-3">
+              <div className="border-gray-300 border-2 w-full flex flex-row items-center rounded-xl ">
+                <SearchIcon className="h-6 text-gray-600  pl-2" />
+                <input
+                  type="text"
+                  placeholder="search"
+                  className=" rounded-lg p-2 w-full bg-transparent text-lg font-Montserrat  focus:outline-none"
+                />
               </div>
+              <div className=" flex flex-row items-center text-[#017189]">
+                <p>Month</p>
+                <ChevronDownIcon className="h-7 text-gray-700 cursor-pointer" />
+              </div>
+            </div>
+
+            <div className="flex flex-row justify-between">
+              <p className="border-b-4 border-[#017189]">Active(3)</p>
+              <p>Inactive(2)</p>
+              <p>close(0)</p>
             </div>
           </div>
         </main>
