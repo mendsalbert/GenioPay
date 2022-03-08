@@ -259,7 +259,7 @@ const ScreenOne = () => {
                 className=" rounded-lg p-2 w-full bg-transparent text-lg font-Montserrat  focus:outline-none"
               />
             </div>
-            <p className="text-center text-2xl  sm:text-3xl text-gray-800 pt-5 font-bold">
+            <p className="text-left text-2xl  sm:text-3xl text-gray-800 pt-5 font-bold">
               Welcome, Mends Albert
             </p>
           </div>
