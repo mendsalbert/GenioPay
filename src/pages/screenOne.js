@@ -1,11 +1,10 @@
 import {
   ChevronDownIcon,
   MenuAlt1Icon,
-  PlusCircleIcon,
   SearchIcon,
   XIcon,
 } from "@heroicons/react/outline";
-import React, { useState, useRef } from "react";
+import React, { useRef } from "react";
 import Layout from "../components/Layout/Layout";
 import trans from "../svgs/trans.svg";
 import wallet from "../svgs/wallet.svg";
@@ -22,7 +21,6 @@ import geniopay from "../svgs/geniopay.svg";
 import star from "../svgs/star.svg";
 import wallet2 from "../svgs/wallet2.svg";
 import security from "../svgs/security.svg";
-import settings from "../svgs/settings.svg";
 import wallet22 from "../svgs/wallet-2.svg";
 import card2 from "../svgs/card-2.svg";
 import dollarsquare from "../svgs/dollar-square.svg";
@@ -112,13 +110,13 @@ const ScreenOne = () => {
               <XIcon className="text-white h-9 absolute top-0 right-0 m-2 mb-10" />
             </div>
             <div className=" mt-9 text-center flex flex-row items-center justify-center pb-4">
-              <img src={geniopay} className="" width={180} />
+              <img alt="alt" src={geniopay} className="" width={180} />
             </div>
             <div className="bg-[#9bd5e44b] rounded-md space-y-3 flex flex-col p-4 w-full">
               <div className="flex flex-row  items-center justify-between w-full">
                 <div className="flex flex-row items-center">
                   <div className="mr-3">
-                    <img src={wallet2} />
+                    <img alt="alt" src={wallet2} />
                   </div>
                   <div className="text-white">
                     <p>Wallet Balance</p>
@@ -126,14 +124,14 @@ const ScreenOne = () => {
                   </div>
                 </div>
                 <div>
-                  <img src={security} />
+                  <img alt="alt" src={security} />
                 </div>
               </div>
               <hr />
               <div className="flex flex-row  items-center justify-between w-full">
                 <div className="flex flex-row items-center">
                   <div className="mr-3">
-                    <img src={star} />
+                    <img alt="alt" src={star} />
                   </div>
                   <div className="text-white">
                     <p>Wallet Balance</p>
@@ -154,40 +152,48 @@ const ScreenOne = () => {
 
             <div className="mt-10 space-y-9">
               <div className="flex flex-row bg-white p-4 rounded-md">
-                <img src={Grid} className=" w-6 mr-4" />
+                <img alt="alt" src={Grid} className=" w-6 mr-4" />
                 <p className="text-[#017189] font-bold">
                   <Link to="/">Dashboard</Link>
                   {/* <NavLink to='/'>Dashboard</NavLink> */}
                 </p>
               </div>
               <div className="flex flex-row">
-                <img src={wallet22} className="fill-white w-6 mr-4" />
+                <img alt="alt" src={wallet22} className="fill-white w-6 mr-4" />
 
                 <p className="text-white ">
                   <Link to="/wallet">Wallet</Link>
                 </p>
               </div>
               <div className="flex flex-row">
-                <img src={card2} className="fill-white w-6 mr-4" />
+                <img alt="alt" src={card2} className="fill-white w-6 mr-4" />
                 <p className="text-white ">Cards</p>
               </div>
               <div className="flex flex-row">
-                <img src={dollarsquare} className="fill-white w-6 mr-4" />
+                <img
+                  alt="alt"
+                  src={dollarsquare}
+                  className="fill-white w-6 mr-4"
+                />
                 <p className="text-white ">FX centre</p>
               </div>
               <div className="flex flex-row">
-                <img src={profileuser} className="fill-white w-6 mr-4" />
+                <img
+                  alt="alt"
+                  src={profileuser}
+                  className="fill-white w-6 mr-4"
+                />
                 <p className="text-white ">Beneficiaries</p>
               </div>
               <div className="flex flex-row">
-                <img src={tag} className="fill-white w-6 mr-4" />
+                <img alt="alt" src={tag} className="fill-white w-6 mr-4" />
                 <p className="text-white ">Perks</p>
               </div>
             </div>
 
             <div className="bg-[#FFF5E9] rounded-md mt-8 space-y-3 flex flex-col p-4 w-full">
               <div className="flex flex-row ">
-                <img src="/img/broadcast.png" width={100} />
+                <img alt="alt" src="/img/broadcast.png" width={100} />
                 <div>
                   <p className="font-bold text-lg">Refer and Earn</p>
                   <p className="text-gray-700">
@@ -219,11 +225,11 @@ const ScreenOne = () => {
             </div>
             <div className=" flex items-center justify-start space-x-2">
               <div className="flex flex-col items-center">
-                <img src="/img/upload.png" />
+                <img alt="alt" src="/img/upload.png" />
               </div>
 
               <div className="relative">
-                <img src="img/notification.png" />
+                <img alt="alt" src="img/notification.png" />
                 <div className=" absolute -top-2 -right-1 ">
                   <span class="absolute right-0 top-0 rounded-full bg-red-600 w-4 h-4 top right p-0 m-0 text-white  text-sm  leading-tight text-center">
                     5
@@ -232,7 +238,7 @@ const ScreenOne = () => {
               </div>
 
               <div className="flex flex-row items-center pr-1 ">
-                <img src="/img/avtr.png " className="w-14 h-10" />
+                <img alt="alt" src="/img/avtr.png " className="w-14 h-10" />
                 <div className="flex flex-col">
                   {/* <p className="text-green-600 text-sm">verified</p>
                           <p className="text-md font-bold text-gray-800">
@@ -262,14 +268,14 @@ const ScreenOne = () => {
               Wallet
             </p>
             <div className="sm:flex sm:flex-row-reverse">
-              <img src={plus} className="w-10 pb-2 sm:ml-4" />
+              <img alt="alt" src={plus} className="w-10 pb-2 sm:ml-4" />
               <div className="bg-[#FFF6E6] rounded-md w-full sm:w-6/12 flex flex-col p-4 justify-between space-y-6">
                 <div className="flex flex-row justify-between items-center">
                   <div className="flex flex-col">
                     <p>Personal Account</p>
                     <p>USD</p>
                   </div>
-                  <img src="/img/usd.png" />
+                  <img alt="alt" src="/img/usd.png" />
                 </div>
                 <div>
                   <p className="font-bold text-2xl">$ 10,250.00</p>
@@ -289,35 +295,35 @@ const ScreenOne = () => {
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
               <div className="white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-6">
-                <img src={wallet} className="w-10" />
+                <img alt="alt" src={wallet} className="w-10" />
 
                 <p className="text-gray-500  ">Add new Wallet</p>
               </div>
               <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-6">
-                <img src={card} className="w-10" />
+                <img alt="alt" src={card} className="w-10" />
                 <p className="text-gray-500  ">Add new Card</p>
               </div>
 
               <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-6">
-                <img src={ballance} className="w-10" />
+                <img alt="alt" src={ballance} className="w-10" />
                 <p className="text-gray-500  ">Balance Exchange</p>
               </div>
               <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-6">
-                <img src={account} className="w-10" />
+                <img alt="alt" src={account} className="w-10" />
                 <p className="text-gray-500  ">transfer to Account</p>
               </div>
 
               <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-6">
-                <img src={voucher} className="w-10" />
+                <img alt="alt" src={voucher} className="w-10" />
                 <p className="text-gray-500  ">Generate Voucher</p>
               </div>
               <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-6">
-                <img src={momo} className="w-10" />
+                <img alt="alt" src={momo} className="w-10" />
                 <p className="text-gray-500  ">Mobile Money</p>
               </div>
 
               <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-6">
-                <img src={link} className="w-10" />
+                <img alt="alt" src={link} className="w-10" />
                 <p className="text-gray-500  ">Payment Link</p>
               </div>
             </div>
@@ -342,14 +348,14 @@ const ScreenOne = () => {
               </div>
               <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
                 <div className="flex items-center  p-2 rounded-md shadow-md">
-                  <img src={trans} className="w-16 mr-5" />
+                  <img alt="alt" src={trans} className="w-16 mr-5" />
                   <div>
                     <p>Total transaction</p>
                     <p className="font-bold">$88,666.00</p>
                   </div>
                 </div>
                 <div className="flex items-center bg-gray-100 p-2 rounded-md shadow-md">
-                  <img src={payout} className="w-16 mr-5" />
+                  <img alt="alt" src={payout} className="w-16 mr-5" />
                   <div>
                     <p>Pay-In</p>
                     <p className="font-bold">$88,666.00</p>
@@ -357,7 +363,7 @@ const ScreenOne = () => {
                 </div>
 
                 <div className="flex items-center bg-gray-100 p-2 rounded-md shadow-md">
-                  <img src={payin} className="w-16 mr-5" />
+                  <img alt="alt" src={payin} className="w-16 mr-5" />
                   <div>
                     <p>Pay-Out</p>
                     <p className="font-bold">$88,666.00</p>
@@ -404,13 +410,13 @@ const ScreenOne = () => {
             {/* <div className="w-11/12 bg-[#017189] md:hidden overflow-auto h-full fixed shadow-2xl top-0 left-0 z-50"> */}
             <div className="flex flex-col p-6">
               <div className="text-center flex flex-row items-center justify-center pb-4">
-                <img src={geniopay} className="" width={160} />
+                <img alt="alt" src={geniopay} className="" width={160} />
               </div>
               <div className="bg-[#9bd5e44b] rounded-md space-y-3 flex flex-col p-4 w-full">
                 <div className="flex flex-row  items-center justify-between w-full">
                   <div className="flex flex-row items-center">
                     <div className="mr-3">
-                      <img src={wallet2} />
+                      <img alt="alt" src={wallet2} />
                     </div>
                     <div className="text-white">
                       <p>Wallet Balance</p>
@@ -418,14 +424,14 @@ const ScreenOne = () => {
                     </div>
                   </div>
                   <div>
-                    <img src={security} />
+                    <img alt="alt" src={security} />
                   </div>
                 </div>
                 <hr />
                 <div className="flex flex-row  items-center justify-between w-full">
                   <div className="flex flex-row items-center">
                     <div className="mr-3">
-                      <img src={star} />
+                      <img alt="alt" src={star} />
                     </div>
                     <div className="text-white">
                       <p>Wallet Balance</p>
@@ -446,38 +452,50 @@ const ScreenOne = () => {
 
               <div className="mt-10 space-y-9">
                 <div className="flex flex-row bg-white p-4 rounded-md">
-                  <img src={Grid} className=" w-6 mr-4" />
+                  <img alt="alt" src={Grid} className=" w-6 mr-4" />
                   <p className="text-[#017189] font-bold ">
                     <Link to="/">Dashboard</Link>
                   </p>
                 </div>
                 <div className="flex flex-row">
-                  <img src={wallet22} className="fill-white w-6 mr-4" />
+                  <img
+                    alt="alt"
+                    src={wallet22}
+                    className="fill-white w-6 mr-4"
+                  />
                   <p className="text-white ">
                     <Link to="/wallet">Wallet</Link>
                   </p>
                 </div>
                 <div className="flex flex-row">
-                  <img src={card2} className="fill-white w-6 mr-4" />
+                  <img alt="alt" src={card2} className="fill-white w-6 mr-4" />
                   <p className="text-white ">Cards</p>
                 </div>
                 <div className="flex flex-row">
-                  <img src={dollarsquare} className="fill-white w-6 mr-4" />
+                  <img
+                    alt="alt"
+                    src={dollarsquare}
+                    className="fill-white w-6 mr-4"
+                  />
                   <p className="text-white ">FX centre</p>
                 </div>
                 <div className="flex flex-row">
-                  <img src={profileuser} className="fill-white w-6 mr-4" />
+                  <img
+                    alt="alt"
+                    src={profileuser}
+                    className="fill-white w-6 mr-4"
+                  />
                   <p className="text-white ">Beneficiaries</p>
                 </div>
                 <div className="flex flex-row">
-                  <img src={tag} className="fill-white w-6 mr-4" />
+                  <img alt="alt" src={tag} className="fill-white w-6 mr-4" />
                   <p className="text-white ">Perks</p>
                 </div>
               </div>
 
               <div className="bg-[#FFF5E9] rounded-md mt-8 space-y-3 flex flex-col p-4 w-full">
                 <div className="flex flex-row ">
-                  <img src="/img/broadcast.png" width={100} />
+                  <img alt="alt" src="/img/broadcast.png" width={100} />
                   <div>
                     <p className="font-bold text-lg">Refer and Earn</p>
                     <p className="text-gray-700">
@@ -511,12 +529,12 @@ const ScreenOne = () => {
                 </div>
                 <div className=" ml-5 flex items-center justify-start space-x-2">
                   <div className="flex flex-row space-x-2 justify-center items-center">
-                    <img src="/img/upload.png" />
+                    <img alt="alt" src="/img/upload.png" />
                     <p>0 planted</p>
                   </div>
 
                   <div className="relative">
-                    <img src="img/notification.png" />
+                    <img alt="alt" src="img/notification.png" />
                     <div className=" absolute -top-2 -right-1 ">
                       <span class="absolute right-0 top-0 rounded-full bg-red-600 w-4 h-4 top right p-0 m-0 text-white  text-sm  leading-tight text-center">
                         5
@@ -525,7 +543,7 @@ const ScreenOne = () => {
                   </div>
 
                   <div className="flex flex-row items-center pr-1 ">
-                    <img src="/img/avtr.png " className="w-14 h-10" />
+                    <img alt="alt" src="/img/avtr.png " className="w-14 h-10" />
                     <div className="flex flex-col">
                       <p className="text-green-600 text-sm">verified</p>
                       <p className="text-md font-bold text-gray-800 w-full">
@@ -549,13 +567,17 @@ const ScreenOne = () => {
                       <p>Personal Account</p>
                       <p>USD</p>
                     </div>
-                    <img src="/img/usd.png" />
+                    <img alt="alt" src="/img/usd.png" />
                   </div>
                   <div>
                     <p className="font-bold text-2xl">$ 10,250.00</p>
                   </div>
                 </div>
-                <img src={plus} className="w-10 pb-2 cursor-pointer" />
+                <img
+                  alt="alt"
+                  src={plus}
+                  className="w-10 pb-2 cursor-pointer"
+                />
               </div>
             </div>
 
@@ -569,35 +591,35 @@ const ScreenOne = () => {
                 </p>
                 <div className="grid grid-cols-7  gap-3">
                   <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-6">
-                    <img src={wallet} className="w-10" />
+                    <img alt="alt" src={wallet} className="w-10" />
 
                     <p className="text-gray-500  ">Add new Wallet</p>
                   </div>
                   <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-6">
-                    <img src={card} className="w-10" />
+                    <img alt="alt" src={card} className="w-10" />
                     <p className="text-gray-500  ">Add new Card</p>
                   </div>
 
                   <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-6">
-                    <img src={ballance} className="w-10" />
+                    <img alt="alt" src={ballance} className="w-10" />
                     <p className="text-gray-500  ">Balance Exchange</p>
                   </div>
                   <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-6">
-                    <img src={account} className="w-10" />
+                    <img alt="alt" src={account} className="w-10" />
                     <p className="text-gray-500  ">transfer to Account</p>
                   </div>
 
                   <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-6">
-                    <img src={voucher} className="w-10" />
+                    <img alt="alt" src={voucher} className="w-10" />
                     <p className="text-gray-500  ">Generate Voucher</p>
                   </div>
                   <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-6">
-                    <img src={momo} className="w-10" />
+                    <img alt="alt" src={momo} className="w-10" />
                     <p className="text-gray-500  ">Mobile Money</p>
                   </div>
 
                   <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-6">
-                    <img src={link} className="w-10" />
+                    <img alt="alt" src={link} className="w-10" />
                     <p className="text-gray-500  ">Payment Link</p>
                   </div>
                 </div>
@@ -622,14 +644,14 @@ const ScreenOne = () => {
                   </div>
                   <div className="flex flex-row justify-end space-x-2">
                     <div className="flex items-center  p-2 rounded-md shadow-md">
-                      <img src={trans} className="w-16 mr-5" />
+                      <img alt="alt" src={trans} className="w-16 mr-5" />
                       <div>
                         <p>Total transaction</p>
                         <p className="font-bold">$88,666.00</p>
                       </div>
                     </div>
                     <div className="flex items-center  p-2 rounded-md shadow-md">
-                      <img src={payout} className="w-16 mr-5" />
+                      <img alt="alt" src={payout} className="w-16 mr-5" />
                       <div>
                         <p>Pay-In</p>
                         <p className="font-bold">$88,666.00</p>
@@ -637,7 +659,7 @@ const ScreenOne = () => {
                     </div>
 
                     <div className="flex items-center  p-2 rounded-md shadow-md">
-                      <img src={payin} className="w-16 mr-5" />
+                      <img alt="alt" src={payin} className="w-16 mr-5" />
                       <div>
                         <p>Pay-Out</p>
                         <p className="font-bold">$88,666.00</p>

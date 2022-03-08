@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
-import PacmanLoader from "react-spinners/PacmanLoader";
-import ClockLoader from "react-spinners/ClockLoader";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import ScreenOne from "./pages/screenOne";
 import ScreenTwo from "./pages/screenTwo";
 import genopay_logo from "./svgs/geniopay.svg";
@@ -17,7 +15,7 @@ const App = () => {
   if (isLoading) {
     return (
       <div className="bg-[#017189]  w-full h-screen flex flex-col justify-center items-center">
-        <img src={genopay_logo} className="animate-pulse" />
+        <img src={genopay_logo} alt="" className="animate-pulse" />
       </div>
     );
   } else {

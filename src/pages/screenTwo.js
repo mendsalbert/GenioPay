@@ -1,38 +1,27 @@
 import {
   ChevronDownIcon,
   MenuAlt1Icon,
-  PlusCircleIcon,
   PlusIcon,
   SearchIcon,
   XIcon,
 } from "@heroicons/react/outline";
-import React, { useState, useRef } from "react";
+import React, { useRef } from "react";
 import Layout from "../components/Layout/Layout";
-import trans from "../svgs/trans.svg";
-import wallet from "../svgs/wallet.svg";
-import account from "../svgs/account.svg";
-import ballance from "../svgs/ballance.svg";
-import momo from "../svgs/momo.svg";
-import voucher from "../svgs/voucher.svg";
-import link from "../svgs/link.svg";
-import card from "../svgs/card.svg";
-import payin from "../svgs/payin.svg";
-import payout from "../svgs/payout.svg";
-import plus from "../svgs/plus.svg";
+
 import geniopay from "../svgs/geniopay.svg";
 import star from "../svgs/star.svg";
 import wallet2 from "../svgs/wallet2.svg";
 import security from "../svgs/security.svg";
 import settings from "../svgs/settings.svg";
-import wallet22 from "../svgs/wallet-2.svg";
+
 import wallet_active from "../svgs/wallet_active.svg";
 import card2 from "../svgs/card-2.svg";
 import dollarsquare from "../svgs/dollar-square.svg";
 import profileuser from "../svgs/profile-2user.svg";
 import tag from "../svgs/tag.svg";
-import Grid from "../svgs/Grid.svg";
+
 import arrow from "../svgs/Arrow.svg";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import icon1 from "../svgs/icon1.svg";
 import icon2 from "../svgs/icon2.svg";
 import icon3 from "../svgs/icon3.svg";
@@ -66,13 +55,13 @@ const ScreenOne = () => {
               <XIcon className="text-white h-9 absolute top-0 right-0 m-2 mb-10" />
             </div>
             <div className=" mt-9 text-center flex flex-row items-center justify-center pb-4">
-              <img src={geniopay} className="" width={180} />
+              <img alt="alt" src={geniopay} className="" width={180} />
             </div>
             <div className="bg-[#9bd5e44b] rounded-md space-y-3 flex flex-col p-4 w-full">
               <div className="flex flex-row  items-center justify-between w-full">
                 <div className="flex flex-row items-center">
                   <div className="mr-3">
-                    <img src={wallet2} />
+                    <img alt="alt" src={wallet2} />
                   </div>
                   <div className="text-white">
                     <p>Wallet Balance</p>
@@ -80,14 +69,14 @@ const ScreenOne = () => {
                   </div>
                 </div>
                 <div>
-                  <img src={security} />
+                  <img alt="alt" src={security} />
                 </div>
               </div>
               <hr />
               <div className="flex flex-row  items-center justify-between w-full">
                 <div className="flex flex-row items-center">
                   <div className="mr-3">
-                    <img src={star} />
+                    <img alt="alt" src={star} />
                   </div>
                   <div className="text-white">
                     <p>Wallet Balance</p>
@@ -108,40 +97,52 @@ const ScreenOne = () => {
 
             <div className="mt-10 space-y-9">
               <div className="flex flex-row ">
-                <img src={settings} className=" w-6 mr-4" />
+                <img alt="alt" src={settings} className=" w-6 mr-4" />
                 <p className="text-white">
                   <Link to="/">Dashboard</Link>
                   {/* <NavLink to='/'>Dashboard</NavLink> */}
                 </p>
               </div>
               <div className="flex flex-row bg-white p-4 rounded-md">
-                <img src={wallet_active} className="fill-white w-6 mr-4" />
+                <img
+                  alt="alt"
+                  src={wallet_active}
+                  className="fill-white w-6 mr-4"
+                />
 
                 <p className="text-[#017189] font-bold">
                   <Link to="/wallet">Wallet</Link>
                 </p>
               </div>
               <div className="flex flex-row">
-                <img src={card2} className="fill-white w-6 mr-4" />
+                <img alt="alt" src={card2} className="fill-white w-6 mr-4" />
                 <p className="text-white ">Cards</p>
               </div>
               <div className="flex flex-row">
-                <img src={dollarsquare} className="fill-white w-6 mr-4" />
+                <img
+                  alt="alt"
+                  src={dollarsquare}
+                  className="fill-white w-6 mr-4"
+                />
                 <p className="text-white ">FX centre</p>
               </div>
               <div className="flex flex-row">
-                <img src={profileuser} className="fill-white w-6 mr-4" />
+                <img
+                  alt="alt"
+                  src={profileuser}
+                  className="fill-white w-6 mr-4"
+                />
                 <p className="text-white ">Beneficiaries</p>
               </div>
               <div className="flex flex-row">
-                <img src={tag} className="fill-white w-6 mr-4" />
+                <img alt="alt" src={tag} className="fill-white w-6 mr-4" />
                 <p className="text-white ">Perks</p>
               </div>
             </div>
 
             <div className="bg-[#FFF5E9] rounded-md mt-8 space-y-3 flex flex-col p-4 w-full">
               <div className="flex flex-row ">
-                <img src="/img/broadcast.png" width={100} />
+                <img alt="alt" src="/img/broadcast.png" width={100} />
                 <div>
                   <p className="font-bold text-lg">Refer and Earn</p>
                   <p className="text-gray-700">
@@ -170,11 +171,11 @@ const ScreenOne = () => {
             </div>
             <div className=" flex items-center justify-start space-x-2">
               <div className="flex flex-col items-center">
-                <img src="/img/upload.png" />
+                <img alt="alt" src="/img/upload.png" />
               </div>
 
               <div className="relative">
-                <img src="img/notification.png" />
+                <img alt="alt" src="img/notification.png" />
                 <div className=" absolute -top-2 -right-1 ">
                   <span class="absolute right-0 top-0 rounded-full bg-red-600 w-4 h-4 top right p-0 m-0 text-white  text-sm  leading-tight text-center">
                     5
@@ -183,7 +184,7 @@ const ScreenOne = () => {
               </div>
 
               <div className="flex flex-row items-center pr-1 ">
-                <img src="/img/avtr.png " className="w-14 h-10" />
+                <img alt="alt" src="/img/avtr.png " className="w-14 h-10" />
                 <div className="flex flex-col"></div>
               </div>
             </div>
@@ -234,7 +235,7 @@ const ScreenOne = () => {
             <div className="flex flex-col pt-8 space-y-9">
               <div className=" bg-[#EEF7F9] py-4 px-1 rounded-md flex flex-row justify-between w-full">
                 <div className="flex flex-row space-x-2">
-                  <img src="/img/euro.png" className="rounded-full" />
+                  <img alt="alt" src="/img/euro.png" className="rounded-full" />
                   <div className="flex flex-col">
                     <span className="text-sm">EUR Wallet</span>
                     <span className="text-sm">EUR</span>
@@ -287,15 +288,15 @@ const ScreenOne = () => {
 
               <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
                 <div className="bg-white border-2 cursor-pointer flex flex-row items-center justify-center p-2 text-center rounded-md border-[#017189] text-[#017189]">
-                  <img src="/img/payment.png" className="mr-2" />
+                  <img alt="alt" src="/img/payment.png" className="mr-2" />
                   <span>Payment</span>
                 </div>
                 <div className="bg-white border-2 cursor-pointer flex flex-row items-center justify-center p-2 text-center rounded-md border-[#017189] text-[#017189]">
-                  <img src={arrow} className="mr-2" />
+                  <img alt="alt" src={arrow} className="mr-2" />
                   <span>Pay In</span>
                 </div>
                 <div className="bg-white border-2 cursor-pointer flex flex-row items-center justify-center p-2 text-center rounded-md border-[#017189] text-[#017189]">
-                  <img src="/img/exchange.png" className="mr-2" />
+                  <img alt="alt" src="/img/exchange.png" className="mr-2" />
                   <span>Exchange</span>
                 </div>
               </div>
@@ -308,26 +309,26 @@ const ScreenOne = () => {
 
                 <div className="space-y-4 mt-8">
                   <div className="flex flex-row items-center">
-                    <img src={icon1} className="fill-white  mr-4" />
+                    <img alt="alt" src={icon1} className="fill-white  mr-4" />
                     <p className="text-gray-700">Remove as default wallet</p>
                   </div>
                   <div className="flex flex-row items-center">
-                    <img src={icon2} className="fill-white  mr-4" />
+                    <img alt="alt" src={icon2} className="fill-white  mr-4" />
                     <p className="text-gray-700">View Linked Card</p>
                   </div>
 
                   <div className="flex flex-row items-center">
-                    <img src={icon3} className="fill-white  mr-4" />
+                    <img alt="alt" src={icon3} className="fill-white  mr-4" />
                     <p className="text-gray-700">Statements</p>
                   </div>
 
                   <div className="flex flex-row items-center">
-                    <img src={icon4} className="fill-white mr-4" />
+                    <img alt="alt" src={icon4} className="fill-white mr-4" />
                     <p className="text-gray-700">Inflow Details</p>
                   </div>
 
                   <div className="flex flex-row items-center">
-                    <img src={icon5} className="fill-white  mr-4" />
+                    <img alt="alt" src={icon5} className="fill-white  mr-4" />
                     <p className="text-gray-700">Wallet Information</p>
                   </div>
                 </div>
@@ -353,7 +354,11 @@ const ScreenOne = () => {
                     <div className="flex flex-row items-center justify-between">
                       <div className=" bg-white py-4 px-1 rounded-md flex flex-row justify-between w-full">
                         <div className="flex flex-row space-x-2">
-                          <img src={payinvoucher} className="rounded-full" />
+                          <img
+                            alt="alt"
+                            src={payinvoucher}
+                            className="rounded-full"
+                          />
                           <div className="flex flex-col">
                             <span className="text-sm">Pay In-Voucher</span>
                             <span className="text-sm">EUR wallet</span>
@@ -372,7 +377,7 @@ const ScreenOne = () => {
               {/* Euro wallets active */}
               <div className="flex flex-row justify-between w-full">
                 <div className="flex flex-row space-x-2">
-                  <img src="/img/usd.png" className="rounded-full" />
+                  <img alt="alt" src="/img/usd.png" className="rounded-full" />
                   <div className="flex flex-col">
                     <span className="text-sm">Personal Account</span>
                     <span className="text-sm">USD</span>
@@ -386,7 +391,7 @@ const ScreenOne = () => {
 
               <div className="flex flex-row justify-between w-full">
                 <div className="flex flex-row space-x-2">
-                  <img src="/img/uk.png" className="rounded-full" />
+                  <img alt="alt" src="/img/uk.png" className="rounded-full" />
                   <div className="flex flex-col">
                     <span className="text-sm">School Savings</span>
                     <span className="text-sm">GDP</span>
@@ -406,13 +411,13 @@ const ScreenOne = () => {
           <div className="w-3/12 bg-[#017189]">
             <div className="flex flex-col p-6">
               <div className="text-center flex flex-row items-center justify-center pb-4">
-                <img src={geniopay} className="" width={160} />
+                <img alt="alt" src={geniopay} className="" width={160} />
               </div>
               <div className="bg-[#9bd5e44b] rounded-md space-y-3 flex flex-col p-4 w-full">
                 <div className="flex flex-row  items-center justify-between w-full">
                   <div className="flex flex-row items-center">
                     <div className="mr-3">
-                      <img src={wallet2} />
+                      <img alt="alt" src={wallet2} />
                     </div>
                     <div className="text-white">
                       <p>Wallet Balance</p>
@@ -420,14 +425,14 @@ const ScreenOne = () => {
                     </div>
                   </div>
                   <div>
-                    <img src={security} />
+                    <img alt="alt" src={security} />
                   </div>
                 </div>
                 <hr />
                 <div className="flex flex-row  items-center justify-between w-full">
                   <div className="flex flex-row items-center">
                     <div className="mr-3">
-                      <img src={star} />
+                      <img alt="alt" src={star} />
                     </div>
                     <div className="text-white">
                       <p>Wallet Balance</p>
@@ -448,36 +453,48 @@ const ScreenOne = () => {
 
               <div className="mt-10 space-y-9">
                 <div className="flex flex-row">
-                  <img src={settings} className=" w-6 mr-4" />
+                  <img alt="alt" src={settings} className=" w-6 mr-4" />
                   <p className="text-white font-bold ">
                     <Link to="/">Dashboard</Link>
                   </p>
                 </div>
                 <div className="flex flex-row bg-white p-4 rounded-md">
-                  <img src={wallet_active} className="fill-white w-6 mr-4" />
+                  <img
+                    alt="alt"
+                    src={wallet_active}
+                    className="fill-white w-6 mr-4"
+                  />
                   <p className="text-[#017189] font-bold">Wallet</p>
                 </div>
                 <div className="flex flex-row">
-                  <img src={card2} className="fill-white w-6 mr-4" />
+                  <img alt="alt" src={card2} className="fill-white w-6 mr-4" />
                   <p className="text-white ">Cards</p>
                 </div>
                 <div className="flex flex-row">
-                  <img src={dollarsquare} className="fill-white w-6 mr-4" />
+                  <img
+                    alt="alt"
+                    src={dollarsquare}
+                    className="fill-white w-6 mr-4"
+                  />
                   <p className="text-white ">FX centre</p>
                 </div>
                 <div className="flex flex-row">
-                  <img src={profileuser} className="fill-white w-6 mr-4" />
+                  <img
+                    alt="alt"
+                    src={profileuser}
+                    className="fill-white w-6 mr-4"
+                  />
                   <p className="text-white ">Beneficiaries</p>
                 </div>
                 <div className="flex flex-row">
-                  <img src={tag} className="fill-white w-6 mr-4" />
+                  <img alt="alt" src={tag} className="fill-white w-6 mr-4" />
                   <p className="text-white ">Perks</p>
                 </div>
               </div>
 
               <div className="bg-[#FFF5E9] rounded-md mt-8 space-y-3 flex flex-col p-4 w-full">
                 <div className="flex flex-row ">
-                  <img src="/img/broadcast.png" width={100} />
+                  <img alt="alt" src="/img/broadcast.png" width={100} />
                   <div>
                     <p className="font-bold text-lg">Refer and Earn</p>
                     <p className="text-gray-700">
@@ -511,12 +528,12 @@ const ScreenOne = () => {
                 </div>
                 <div className=" ml-5 flex items-center justify-start space-x-2">
                   <div className="flex flex-row space-x-2 justify-center items-center">
-                    <img src="/img/upload.png" />
+                    <img alt="alt" src="/img/upload.png" />
                     <p>0 planted</p>
                   </div>
 
                   <div className="relative">
-                    <img src="img/notification.png" />
+                    <img alt="alt" src="img/notification.png" />
                     <div className=" absolute -top-2 -right-1 ">
                       <span class="absolute right-0 top-0 rounded-full bg-red-600 w-4 h-4 top right p-0 m-0 text-white  text-sm  leading-tight text-center">
                         5
@@ -525,7 +542,7 @@ const ScreenOne = () => {
                   </div>
 
                   <div className="flex flex-row items-center pr-1 ">
-                    <img src="/img/avtr.png " className="w-14 h-10" />
+                    <img alt="alt" src="/img/avtr.png " className="w-14 h-10" />
                     <div className="flex flex-col">
                       <p className="text-green-600 text-sm">verified</p>
                       <p className="text-md font-bold text-gray-800 w-full">
@@ -575,7 +592,11 @@ const ScreenOne = () => {
                 <div className="flex flex-col pt-8 space-y-9">
                   <div className=" bg-[#EEF7F9] py-4 px-1 rounded-md flex flex-row justify-between w-full">
                     <div className="flex flex-row space-x-2">
-                      <img src="/img/euro.png" className="rounded-full" />
+                      <img
+                        alt="alt"
+                        src="/img/euro.png"
+                        className="rounded-full"
+                      />
                       <div className="flex flex-col">
                         <span className="text-sm">EUR Wallet</span>
                         <span className="text-sm">EUR</span>
@@ -589,7 +610,11 @@ const ScreenOne = () => {
 
                   <div className="flex flex-row justify-between w-full">
                     <div className="flex flex-row space-x-2">
-                      <img src="/img/usd.png" className="rounded-full" />
+                      <img
+                        alt="alt"
+                        src="/img/usd.png"
+                        className="rounded-full"
+                      />
                       <div className="flex flex-col">
                         <span className="text-sm">Personal Account</span>
                         <span className="text-sm">USD</span>
@@ -603,7 +628,11 @@ const ScreenOne = () => {
 
                   <div className="flex flex-row justify-between w-full">
                     <div className="flex flex-row space-x-2">
-                      <img src="/img/uk.png" className="rounded-full" />
+                      <img
+                        alt="alt"
+                        src="/img/uk.png"
+                        className="rounded-full"
+                      />
                       <div className="flex flex-col">
                         <span className="text-sm">School Savings</span>
                         <span className="text-sm">GDP</span>
@@ -658,15 +687,15 @@ const ScreenOne = () => {
 
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
                   <div className="bg-white border-2 cursor-pointer flex flex-row items-center justify-center p-2 text-center rounded-md border-[#017189] text-[#017189]">
-                    <img src="/img/payment.png" className="mr-2" />
+                    <img alt="alt" src="/img/payment.png" className="mr-2" />
                     <span>Payment</span>
                   </div>
                   <div className="bg-white border-2 cursor-pointer flex flex-row items-center justify-center p-2 text-center rounded-md border-[#017189] text-[#017189]">
-                    <img src={arrow} className="mr-2" />
+                    <img alt="alt" src={arrow} className="mr-2" />
                     <span>Pay In</span>
                   </div>
                   <div className="bg-white border-2 cursor-pointer flex flex-row items-center justify-center p-2 text-center rounded-md border-[#017189] text-[#017189]">
-                    <img src="/img/exchange.png" className="mr-2" />
+                    <img alt="alt" src="/img/exchange.png" className="mr-2" />
                     <span>Exchange</span>
                   </div>
                 </div>
@@ -679,26 +708,26 @@ const ScreenOne = () => {
 
                   <div className="space-y-4 mt-8">
                     <div className="flex flex-row items-center">
-                      <img src={icon1} className="fill-white  mr-4" />
+                      <img alt="alt" src={icon1} className="fill-white  mr-4" />
                       <p className="text-gray-700">Remove as default wallet</p>
                     </div>
                     <div className="flex flex-row items-center">
-                      <img src={icon2} className="fill-white  mr-4" />
+                      <img alt="alt" src={icon2} className="fill-white  mr-4" />
                       <p className="text-gray-700">View Linked Card</p>
                     </div>
 
                     <div className="flex flex-row items-center">
-                      <img src={icon3} className="fill-white  mr-4" />
+                      <img alt="alt" src={icon3} className="fill-white  mr-4" />
                       <p className="text-gray-700">Statements</p>
                     </div>
 
                     <div className="flex flex-row items-center">
-                      <img src={icon4} className="fill-white mr-4" />
+                      <img alt="alt" src={icon4} className="fill-white mr-4" />
                       <p className="text-gray-700">Inflow Details</p>
                     </div>
 
                     <div className="flex flex-row items-center">
-                      <img src={icon5} className="fill-white  mr-4" />
+                      <img alt="alt" src={icon5} className="fill-white  mr-4" />
                       <p className="text-gray-700">Wallet Information</p>
                     </div>
                   </div>
@@ -724,7 +753,11 @@ const ScreenOne = () => {
                       <div className="flex flex-row items-center justify-between">
                         <div className=" bg-white py-4 px-1 rounded-md flex flex-row justify-between w-full">
                           <div className="flex flex-row space-x-2">
-                            <img src={payinvoucher} className="rounded-full" />
+                            <img
+                              alt="alt"
+                              src={payinvoucher}
+                              className="rounded-full"
+                            />
                             <div className="flex flex-col">
                               <span className="text-sm">Pay In-Voucher</span>
                               <span className="text-sm">EUR wallet</span>
