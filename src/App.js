@@ -3,8 +3,9 @@ import {
   MenuAlt1Icon,
   PlusCircleIcon,
   SearchIcon,
+  XIcon,
 } from "@heroicons/react/outline";
-import React from "react";
+import React, { useState } from "react";
 import Layout from "./components/Layout/Layout";
 import trans from "./svgs/trans.svg";
 import wallet from "./svgs/wallet.svg";
@@ -40,6 +41,11 @@ import {
 } from "recharts";
 
 const App = () => {
+  const [toggle, setToggle] = useState(false);
+  const toggleNav = () => {
+    setToggle(!toggle);
+    console.log(toggle);
+  };
   const formatter = (value) => `$${value}K`;
   const data = [
     {
@@ -89,97 +95,110 @@ const App = () => {
   return (
     <Layout>
       <div className="md:hidden">
-        <div className="w-11/12 bg-[#017189] md:hidden overflow-auto h-full fixed shadow-2xl top-0 left-0 z-50">
-          <div className="flex flex-col p-6">
-            <div className="text-center flex flex-row items-center justify-center pb-4">
-              <img src={geniopay} className="" width={180} />
-            </div>
-            <div className="bg-[#9bd5e44b] rounded-md space-y-3 flex flex-col p-4 w-full">
-              <div className="flex flex-row  items-center justify-between w-full">
-                <div className="flex flex-row items-center">
-                  <div className="mr-3">
-                    <img src={wallet2} />
-                  </div>
-                  <div className="text-white">
-                    <p>Wallet Balance</p>
-                    <p className="font-bold">$15,001.00</p>
-                  </div>
-                </div>
-                <div>
-                  <img src={security} />
-                </div>
-              </div>
-              <hr />
-              <div className="flex flex-row  items-center justify-between w-full">
-                <div className="flex flex-row items-center">
-                  <div className="mr-3">
-                    <img src={star} />
-                  </div>
-                  <div className="text-white">
-                    <p>Wallet Balance</p>
-                    <p className="font-bold">$15,001.00</p>
-                  </div>
-                </div>
-              </div>
-              <hr />
-              <div className="flex flex-row items-center justify-between w-full text-center ">
-                <div className="bg-[#FDA4AF] text-center w-6/12 p-2 mr-2 text-white text-lg rounded-sm">
-                  Pay-In
-                </div>
-                <div className="bg-white text-center w-6/12 p-2 text-[#2B899D] text-lg rounded-sm">
-                  Pay-Out
-                </div>
-              </div>
-            </div>
-
-            <div className="mt-10 space-y-9">
-              <div className="flex flex-row">
-                <img src={settings} className=" w-6 mr-4" />
-                <p className="text-white ">Dashboard</p>
-              </div>
-              <div className="flex flex-row">
-                <img src={wallet22} className="fill-white w-6 mr-4" />
-                <p className="text-white ">Wallet</p>
-              </div>
-              <div className="flex flex-row">
-                <img src={card2} className="fill-white w-6 mr-4" />
-                <p className="text-white ">Cards</p>
-              </div>
-              <div className="flex flex-row">
-                <img src={dollarsquare} className="fill-white w-6 mr-4" />
-                <p className="text-white ">FX centre</p>
-              </div>
-              <div className="flex flex-row">
-                <img src={profileuser} className="fill-white w-6 mr-4" />
-                <p className="text-white ">Beneficiaries</p>
-              </div>
-              <div className="flex flex-row">
-                <img src={tag} className="fill-white w-6 mr-4" />
-                <p className="text-white ">Perks</p>
-              </div>
-            </div>
-
-            <div className="bg-[#FFF5E9] rounded-md mt-8 space-y-3 flex flex-col p-4 w-full">
-              <div className="flex flex-row ">
-                <img src="/img/broadcast.png" width={100} />
-                <div>
-                  <p className="font-bold text-lg">Refer and Earn</p>
-                  <p className="text-gray-700">
-                    Use the link below to invite friends
-                  </p>
-                </div>
-              </div>
+        {toggle ? (
+          <div className="w-11/12  bg-[#017189] md:hidden overflow-auto h-full fixed shadow-2xl top-0 left-0 z-50">
+            <div className="flex flex-col p-6 relative">
               <div>
-                <div className="bg-[#017189] text-center w-full p-2 mr-2 text-white text-lg rounded-sm">
-                  Invites Friends
+                <XIcon className="text-white h-7 absolute top-0 right-0 p-5" />
+              </div>
+              <div className="text-center flex flex-row items-center justify-center pb-4">
+                <img src={geniopay} className="" width={180} />
+              </div>
+              <div className="bg-[#9bd5e44b] rounded-md space-y-3 flex flex-col p-4 w-full">
+                <div className="flex flex-row  items-center justify-between w-full">
+                  <div className="flex flex-row items-center">
+                    <div className="mr-3">
+                      <img src={wallet2} />
+                    </div>
+                    <div className="text-white">
+                      <p>Wallet Balance</p>
+                      <p className="font-bold">$15,001.00</p>
+                    </div>
+                  </div>
+                  <div>
+                    <img src={security} />
+                  </div>
+                </div>
+                <hr />
+                <div className="flex flex-row  items-center justify-between w-full">
+                  <div className="flex flex-row items-center">
+                    <div className="mr-3">
+                      <img src={star} />
+                    </div>
+                    <div className="text-white">
+                      <p>Wallet Balance</p>
+                      <p className="font-bold">$15,001.00</p>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <div className="flex flex-row items-center justify-between w-full text-center ">
+                  <div className="bg-[#FDA4AF] text-center w-6/12 p-2 mr-2 text-white text-lg rounded-sm">
+                    Pay-In
+                  </div>
+                  <div className="bg-white text-center w-6/12 p-2 text-[#2B899D] text-lg rounded-sm">
+                    Pay-Out
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-10 space-y-9">
+                <div className="flex flex-row">
+                  <img src={settings} className=" w-6 mr-4" />
+                  <p className="text-white ">Dashboard</p>
+                </div>
+                <div className="flex flex-row">
+                  <img src={wallet22} className="fill-white w-6 mr-4" />
+                  <p className="text-white ">Wallet</p>
+                </div>
+                <div className="flex flex-row">
+                  <img src={card2} className="fill-white w-6 mr-4" />
+                  <p className="text-white ">Cards</p>
+                </div>
+                <div className="flex flex-row">
+                  <img src={dollarsquare} className="fill-white w-6 mr-4" />
+                  <p className="text-white ">FX centre</p>
+                </div>
+                <div className="flex flex-row">
+                  <img src={profileuser} className="fill-white w-6 mr-4" />
+                  <p className="text-white ">Beneficiaries</p>
+                </div>
+                <div className="flex flex-row">
+                  <img src={tag} className="fill-white w-6 mr-4" />
+                  <p className="text-white ">Perks</p>
+                </div>
+              </div>
+
+              <div className="bg-[#FFF5E9] rounded-md mt-8 space-y-3 flex flex-col p-4 w-full">
+                <div className="flex flex-row ">
+                  <img src="/img/broadcast.png" width={100} />
+                  <div>
+                    <p className="font-bold text-lg">Refer and Earn</p>
+                    <p className="text-gray-700">
+                      Use the link below to invite friends
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <div className="bg-[#017189] text-center w-full p-2 mr-2 text-white text-lg rounded-sm">
+                    Invites Friends
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        ) : (
+          ""
+        )}
+
         <nav className=" w-full bg-white-400 fixed pb-48 md:hidden">
           <div className="px-4 sm:px-10 py-4 bg-white flex flex-row  items-center justify-between shadow-md">
-            <div className="bg-white  shadow-lg rounded-full  p-4 text-center">
+            <div
+              onClick={() => {
+                toggleNav();
+              }}
+              className="bg-white  shadow-lg rounded-full  p-4 text-center"
+            >
               <MenuAlt1Icon className="h-7 text-gray-700 cursor-pointer" />
             </div>
             <div className=" flex items-center justify-start space-x-2">
