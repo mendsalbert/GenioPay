@@ -43,11 +43,9 @@ import { Link, NavLink } from "react-router-dom";
 
 const ScreenOne = () => {
   const toggleRef = useRef(null);
-  const [toggle, setToggle] = useState(false);
-  const toggleNav = () => {
+
+  const openMenu = () => {
     toggleRef.current.style.width = "90%";
-    setToggle(!toggle);
-    console.log(toggle);
   };
 
   const closeMenu = () => {
@@ -101,10 +99,9 @@ const ScreenOne = () => {
   return (
     <Layout>
       <div className="lg:hidden ">
-        {/* {toggle ? ( */}
         <div
           ref={toggleRef}
-          className="w-0 transition-all bg-[#017189] lg:hidden overflow-auto h-full fixed shadow-2xl top-0 left-0 z-50"
+          className="w-0 transition-width duration-200 delay-75 ease-in-out bg-[#017189] lg:hidden overflow-auto h-full fixed shadow-2xl top-0 left-0 z-50"
         >
           <div className="flex flex-col p-6 relative">
             <div
@@ -214,7 +211,7 @@ const ScreenOne = () => {
           <div className="px-4 sm:px-10 py-4 bg-white flex flex-row  items-center justify-between shadow-md">
             <div
               onClick={() => {
-                toggleNav();
+                openMenu();
               }}
               className="bg-white  shadow-lg rounded-full  p-4 text-center"
             >

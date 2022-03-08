@@ -5,6 +5,9 @@ module.exports = {
       fontFamily: {
         NunitoSans: "'Nunito Sans', sans-serif",
       },
+      transitionProperty: {
+        width: "width",
+      },
     },
   },
   plugins: [],
