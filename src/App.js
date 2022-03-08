@@ -4,18 +4,22 @@ import ClockLoader from "react-spinners/ClockLoader";
 import { Routes, Route, Link } from "react-router-dom";
 import ScreenOne from "./pages/screenOne";
 import ScreenTwo from "./pages/screenTwo";
-
+import genopay_logo from "./svgs/geniopay.svg";
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 3000);
+    }, 4000);
   }, []);
 
   if (isLoading) {
-    return <p>Loding</p>;
+    return (
+      <div className="bg-[#017189]  w-full h-screen flex flex-col justify-center items-center">
+        <img src={genopay_logo} className="animate-pulse" />
+      </div>
+    );
   } else {
     return (
       <Routes>

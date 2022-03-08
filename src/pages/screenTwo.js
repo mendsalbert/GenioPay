@@ -48,51 +48,7 @@ const ScreenOne = () => {
     setToggle(!toggle);
     console.log(toggle);
   };
-  const formatter = (value) => `$${value}K`;
-  const data = [
-    {
-      name: "Jan",
-      uv: 10,
-      $: 3,
-      amt: 30,
-    },
-    {
-      name: "Feb",
-      uv: 2,
-      $: 2,
-      amt: 20,
-    },
-    {
-      name: "Mar",
-      uv: 3,
-      $: 5,
-      amt: 10,
-    },
-    {
-      name: "Apr",
-      uv: 3,
-      $: 4,
-      amt: 10,
-    },
-    {
-      name: "May",
-      uv: 3,
-      $: 2,
-      amt: 10,
-    },
-    {
-      name: "Jun",
-      uv: 3,
-      $: 4,
-      amt: 10,
-    },
-    {
-      name: "July",
-      uv: 3,
-      $: 1,
-      amt: 10,
-    },
-  ];
+
   return (
     <Layout>
       <div className="lg:hidden ">
@@ -228,12 +184,7 @@ const ScreenOne = () => {
 
               <div className="flex flex-row items-center pr-1 ">
                 <img src="/img/avtr.png " className="w-14 h-10" />
-                <div className="flex flex-col">
-                  {/* <p className="text-green-600 text-sm">verified</p>
-                            <p className="text-md font-bold text-gray-800">
-                              Mends Albert
-                            </p> */}
-                </div>
+                <div className="flex flex-col"></div>
               </div>
             </div>
           </div>
@@ -248,8 +199,11 @@ const ScreenOne = () => {
                 className=" rounded-lg p-2 w-full bg-transparent text-lg font-Montserrat  focus:outline-none"
               />
             </div>
+            <div className="bg-[#017189] text-center w-5/12 my-3 p-2 mr-2 text-white text-lg rounded-lg">
+              New wallet
+            </div>
             <p className="text-center text-2xl  sm:text-3xl text-gray-800 pt-5 font-bold">
-              Welcome, Mends Albert
+              Your wallet (s)
             </p>
           </div>
           <div className="">
@@ -359,36 +313,6 @@ const ScreenOne = () => {
                   </div>
                 </div>
               </div>
-
-              <div className="pt-9 pb-9">
-                <ResponsiveContainer width="100%" height={200}>
-                  <AreaChart
-                    width={500}
-                    height={200}
-                    data={data}
-                    syncId="anyId"
-                    margin={{
-                      top: 10,
-                      right: 30,
-                      left: 0,
-                      bottom: 0,
-                    }}
-                  >
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="name" />
-                    <YAxis domain={[1, 5]} tickFormatter={formatter} />
-                    <Tooltip />
-                    <Area
-                      type="monotone"
-                      dataKey="$"
-                      // stroke="#82ca9d"
-                      stroke="#008aa8"
-                      strokeWidth={5}
-                      fill="#82ca9d"
-                    />
-                  </AreaChart>
-                </ResponsiveContainer>
-              </div>
             </div>
           </div>
         </main>
@@ -490,7 +414,7 @@ const ScreenOne = () => {
             <nav className="  w-full flex flex-row justify-between items-center">
               <div>
                 <p className="text-center text-2xl  text-gray-800  font-bold">
-                  Welcome, Mends Albert
+                  Wallet
                 </p>
               </div>
               <div className="flex flex-row items-center">
@@ -636,36 +560,6 @@ const ScreenOne = () => {
                         <p className="font-bold">$88,666.00</p>
                       </div>
                     </div>
-                  </div>
-
-                  <div className="pt-9 pb-9">
-                    <ResponsiveContainer width="100%" height={400}>
-                      <AreaChart
-                        width={500}
-                        height={600}
-                        data={data}
-                        syncId="anyId"
-                        margin={{
-                          top: 10,
-                          right: 30,
-                          left: 0,
-                          bottom: 0,
-                        }}
-                      >
-                        <CartesianGrid strokeDasharray="3 3" />
-                        <XAxis dataKey="name" />
-                        <YAxis domain={[1, 5]} tickFormatter={formatter} />
-                        <Tooltip />
-                        <Area
-                          type="monotone"
-                          dataKey="$"
-                          // stroke="#82ca9d"
-                          stroke="#008aa8"
-                          strokeWidth={5}
-                          fill="#82ca9d"
-                        />
-                      </AreaChart>
-                    </ResponsiveContainer>
                   </div>
                 </div>
               </div>
