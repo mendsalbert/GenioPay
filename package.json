@@ -22,6 +22,12 @@
     "eject": "react-scripts eject",
     "watch:css": "postcss src/styles/tailwind.css -o src/styles/output.css"
   },
+  "eslintConfig": {
+    "extends": "react-app",
+    "rules": {
+      "jsx-a11y/anchor-is-valid": "off"
+    }
+  },
   "browserslist": {
     "production": [
       ">0.2%",
