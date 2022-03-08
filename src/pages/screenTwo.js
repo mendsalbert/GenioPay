@@ -31,17 +31,13 @@ import dollarsquare from "../svgs/dollar-square.svg";
 import profileuser from "../svgs/profile-2user.svg";
 import tag from "../svgs/tag.svg";
 import Grid from "../svgs/Grid.svg";
-
-import {
-  AreaChart,
-  Area,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  ResponsiveContainer,
-} from "recharts";
+import arrow from "../svgs/Arrow.svg";
 import { Link, NavLink } from "react-router-dom";
+import icon1 from "../svgs/icon1.svg";
+import icon2 from "../svgs/icon2.svg";
+import icon3 from "../svgs/icon3.svg";
+import icon4 from "../svgs/icon4.svg";
+import icon5 from "../svgs/icon5.svg";
 
 const ScreenOne = () => {
   const [toggle, setToggle] = useState(false);
@@ -221,7 +217,7 @@ const ScreenOne = () => {
                 />
               </div>
               <div className=" flex flex-row items-center text-[#017189]">
-                <p>Month</p>
+                <p>All</p>
                 <ChevronDownIcon className="h-7 text-gray-700 cursor-pointer" />
               </div>
             </div>
@@ -259,7 +255,78 @@ const ScreenOne = () => {
                     <span className="text-[#0A6375] font-bold">EUR</span>
                   </div>
                   <div>
-                    <p className="text-2xl font-bold">&#163; 2,000,000 .50</p>
+                    <p className="text-2xl font-bold">&#163;2,000,000.50</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex flex-col  justify-between">
+                <div className="flex flex-col ">
+                  <div className="flex flex-row items-center justify-between ">
+                    <p className="text-gray-600">Ledger Balance</p>
+                    <p className="font-bold text-md">&#163;2,000,000.50</p>
+                  </div>
+                  <div className="flex flex-row items-center justify-between">
+                    <p className="text-gray-600">Blocked Balance</p>
+                    <p className="font-bold text-md">&#163;0.00</p>
+                  </div>
+                </div>
+                <div className="flex flex-col mt-3">
+                  <div className="flex flex-row items-center justify-between ">
+                    <p className="text-gray-600">Total Incoming</p>
+                    <p className="font-bold text-md">&#163;2,000,000.50</p>
+                  </div>
+                  <div className=" flex flex-row items-center justify-between">
+                    <p className="text-gray-600">Total Outgoing</p>
+                    <p className="font-bold text-md">&#163;2,000,000.50</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-2  gap-2">
+                <div className="bg-white border-2 cursor-pointer flex flex-row items-center justify-center p-2 text-center rounded-md border-[#017189] text-[#017189]">
+                  <img src="/img/payment.png" className="mr-2" />
+                  <span>Payment</span>
+                </div>
+                <div className="bg-white border-2 cursor-pointer flex flex-row items-center justify-center p-2 text-center rounded-md border-[#017189] text-[#017189]">
+                  <img src={arrow} className="mr-2" />
+                  <span>Pay In</span>
+                </div>
+                <div className="bg-white border-2 cursor-pointer flex flex-row items-center justify-center p-2 text-center rounded-md border-[#017189] text-[#017189]">
+                  <img src="/img/exchange.png" className="mr-2" />
+                  <span>Exchange</span>
+                </div>
+              </div>
+
+              <div>
+                <div className=" flex flex-row items-center text-[#017189]">
+                  <p>More options</p>
+                  <ChevronDownIcon className="h-7 ml-2 text-[#017189] cursor-pointer" />
+                </div>
+
+                <div className="space-y-4 mt-8">
+                  <div className="flex flex-row items-center">
+                    <img src={icon1} className="fill-white  mr-4" />
+                    <p className="text-gray-700">Remove as default wallet</p>
+                  </div>
+                  <div className="flex flex-row items-center">
+                    <img src={icon2} className="fill-white  mr-4" />
+                    <p className="text-gray-700">View Linked Card</p>
+                  </div>
+
+                  <div className="flex flex-row items-center">
+                    <img src={icon3} className="fill-white  mr-4" />
+                    <p className="text-gray-700">Statements</p>
+                  </div>
+
+                  <div className="flex flex-row items-center">
+                    <img src={icon4} className="fill-white mr-4" />
+                    <p className="text-gray-700">Inflow Details</p>
+                  </div>
+
+                  <div className="flex flex-row items-center">
+                    <img src={icon5} className="fill-white  mr-4" />
+                    <p className="text-gray-700">Wallet Information</p>
                   </div>
                 </div>
               </div>
