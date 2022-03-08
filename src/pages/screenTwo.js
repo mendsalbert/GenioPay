@@ -249,7 +249,19 @@ const ScreenOne = () => {
               {/* Euro wallets active */}
 
               <div className="bg-white shadow-sm">
-                <div className="border-2"></div>
+                <div className="border-2 rounded-md p-4 flex flex-row justify-between items-center">
+                  <div className="flex flex-col">
+                    <span className="flex flex-row text-green-600  space-x-3 items-center">
+                      <span className="bg-green-600  w-2 h-2 mr-2 rounded-full"></span>
+                      Active
+                    </span>
+                    <span>EUR Wallet</span>
+                    <span className="text-[#0A6375] font-bold">EUR</span>
+                  </div>
+                  <div>
+                    <p className="text-2xl font-bold">&#163; 2,000,000 .50</p>
+                  </div>
+                </div>
               </div>
               {/* Euro wallets active */}
               <div className="flex flex-row justify-between w-full">
