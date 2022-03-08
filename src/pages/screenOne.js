@@ -37,7 +37,7 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const ScreenOne = () => {
   const toggleRef = useRef(null);
