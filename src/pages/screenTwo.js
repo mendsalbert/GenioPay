@@ -401,7 +401,6 @@ const ScreenOne = () => {
       <div className="lg:flex hidden ">
         <div className="flex flex-row w-full">
           <div className="w-3/12 bg-[#017189]">
-            {/* <div className="w-11/12 bg-[#017189] md:hidden overflow-auto h-full fixed shadow-2xl top-0 left-0 z-50"> */}
             <div className="flex flex-col p-6">
               <div className="text-center flex flex-row items-center justify-center pb-4">
                 <img src={geniopay} className="" width={160} />
@@ -536,109 +535,204 @@ const ScreenOne = () => {
               </div>
             </nav>
 
-            <div className="">
+            <div className=" py-11 flex flex-row justify-between items-center">
               <p className="text-lg  text-gray-800 pt-5 pb-4 font-bold sm:text-2xl ">
-                Wallet
+                Your wallet
               </p>
-              <div className="flex flex-row">
-                <div className="bg-[#FFF6E6] rounded-md w-4/12 flex flex-col p-4 justify-between space-y-6">
-                  <div className="flex flex-row justify-between items-center">
-                    <div className="flex flex-col">
-                      <p>Personal Account</p>
-                      <p>USD</p>
-                    </div>
-                    <img src="/img/usd.png" />
-                  </div>
-                  <div>
-                    <p className="font-bold text-2xl">$ 10,250.00</p>
-                  </div>
-                </div>
-                <img src={plus} className="w-10 pb-2 cursor-pointer" />
+              <div className="bg-[#017189] flex flex-row items-center text-center  my-3 p-2  text-white text-lg rounded-lg ">
+                <span>
+                  <PlusIcon className="h-5 mr-1 text-white" />
+                </span>
+                Create new wallet
               </div>
             </div>
 
-            <main className="">
-              <div>
-                <p className="text-lg  text-gray-800 pt-5 pb-0 font-bold sm:text-2xl ">
-                  Quick Link
-                </p>
-                <p className="text-md text-gray-600 pt-1 pb-7 sm:text-lg">
-                  Your frequently used actions for easy access
-                </p>
-                <div className="grid grid-cols-7  gap-3">
-                  <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-6">
-                    <img src={wallet} className="w-10" />
+            <main className="w-full flex flex-row space-x-14">
+              <div className=" w-5/12 ">
+                <div className="flex flex-row items-center space-x-3 my-3">
+                  <div className="border-gray-300 border-2 w-full flex flex-row items-center rounded-xl ">
+                    <SearchIcon className="h-6 text-gray-600  pl-2" />
+                    <input
+                      type="text"
+                      placeholder="search"
+                      className=" rounded-lg p-2 w-full bg-transparent text-lg font-Montserrat  focus:outline-none"
+                    />
+                  </div>
+                  <div className=" flex flex-row items-center text-[#017189]">
+                    <p>All</p>
+                    <ChevronDownIcon className="h-7 text-gray-700 cursor-pointer" />
+                  </div>
+                </div>
 
-                    <p className="text-gray-500  ">Add new Wallet</p>
-                  </div>
-                  <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-6">
-                    <img src={card} className="w-10" />
-                    <p className="text-gray-500  ">Add new Card</p>
-                  </div>
-
-                  <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-6">
-                    <img src={ballance} className="w-10" />
-                    <p className="text-gray-500  ">Balance Exchange</p>
-                  </div>
-                  <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-6">
-                    <img src={account} className="w-10" />
-                    <p className="text-gray-500  ">transfer to Account</p>
-                  </div>
-
-                  <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-6">
-                    <img src={voucher} className="w-10" />
-                    <p className="text-gray-500  ">Generate Voucher</p>
-                  </div>
-                  <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-6">
-                    <img src={momo} className="w-10" />
-                    <p className="text-gray-500  ">Mobile Money</p>
+                <div className="flex flex-row pb-5 pt-5 justify-between">
+                  <p className="border-b-4 border-[#017189]">Active(3)</p>
+                  <p>Inactive(2)</p>
+                  <p>close(0)</p>
+                </div>
+                <div className="flex flex-col pt-8 space-y-9">
+                  <div className=" bg-[#EEF7F9] py-4 px-1 rounded-md flex flex-row justify-between w-full">
+                    <div className="flex flex-row space-x-2">
+                      <img src="/img/euro.png" className="rounded-full" />
+                      <div className="flex flex-col">
+                        <span className="text-sm">EUR Wallet</span>
+                        <span className="text-sm">EUR</span>
+                      </div>
+                    </div>
+                    <div className="flex flex-col text-right">
+                      <span className="font-bold">&euro; 2,000,000.00</span>
+                      <span className="text-sm">Default</span>
+                    </div>
                   </div>
 
-                  <div className="bg-white text-center border-2 items-center justify-center space-y-2 rounded-md flex flex-col p-6">
-                    <img src={link} className="w-10" />
-                    <p className="text-gray-500  ">Payment Link</p>
+                  <div className="flex flex-row justify-between w-full">
+                    <div className="flex flex-row space-x-2">
+                      <img src="/img/usd.png" className="rounded-full" />
+                      <div className="flex flex-col">
+                        <span className="text-sm">Personal Account</span>
+                        <span className="text-sm">USD</span>
+                      </div>
+                    </div>
+                    <div className="flex flex-col text-right">
+                      <span className="font-bold">&#36; 10,250.00</span>
+                      {/* <span className="text-sm">Default</span> */}
+                    </div>
+                  </div>
+
+                  <div className="flex flex-row justify-between w-full">
+                    <div className="flex flex-row space-x-2">
+                      <img src="/img/uk.png" className="rounded-full" />
+                      <div className="flex flex-col">
+                        <span className="text-sm">School Savings</span>
+                        <span className="text-sm">GDP</span>
+                      </div>
+                    </div>
+                    <div className="flex flex-col text-right">
+                      <span className="font-bold">&#163; 500.00</span>
+                      {/* <span className="text-sm">Default</span> */}
+                    </div>
                   </div>
                 </div>
               </div>
-            </main>
-
-            <main className="px-4 sm:px-10 pt-6">
-              <div>
-                <div className="">
-                  <div className="flex flex-row justify-between ">
-                    <div className="flex flex-row items-center pb-3">
-                      <p className="font-bold text-lg mr-5"> Activity</p>
-                      <div className=" flex flex-row items-center text-[#017189]">
-                        <p>Month</p>
-                        <ChevronDownIcon className="h-7 text-gray-700 cursor-pointer" />
-                      </div>
+              <div className="w-7/12">
+                <div className="bg-white shadow-sm">
+                  <div className="border-2 rounded-md p-4 flex flex-row justify-between items-center">
+                    <div className="flex flex-col">
+                      <span className="flex flex-row text-green-600  space-x-3 items-center">
+                        <span className="bg-green-600  w-2 h-2 mr-2 rounded-full"></span>
+                        Active
+                      </span>
+                      <span>EUR Wallet</span>
+                      <span className="text-[#0A6375] font-bold">EUR</span>
                     </div>
-
-                    <div className="text-lg font-bold pb-3 text-[#017189] cursor-pointer">
-                      View transaction history
+                    <div>
+                      <p className="text-4xl font-bold">&#163;2,000,000.50</p>
                     </div>
                   </div>
-                  <div className="flex flex-row justify-end space-x-2">
-                    <div className="flex items-center  p-2 rounded-md shadow-md">
-                      <img src={trans} className="w-16 mr-5" />
-                      <div>
-                        <p>Total transaction</p>
-                        <p className="font-bold">$88,666.00</p>
-                      </div>
+                </div>
+
+                <div className="flex flex-row my-8 justify-between items-center">
+                  <div className="flex flex-col space-y-4">
+                    <div className="flex flex-row space-x-5 items-center justify-between ">
+                      <p className="text-gray-600">Ledger Balance</p>
+                      <p className="font-bold text-md">&#163;2,000,000.50</p>
                     </div>
-                    <div className="flex items-center  p-2 rounded-md shadow-md">
-                      <img src={payout} className="w-16 mr-5" />
-                      <div>
-                        <p>Pay-In</p>
-                        <p className="font-bold">$88,666.00</p>
-                      </div>
+                    <div className="flex flex-row items-center justify-between">
+                      <p className="text-gray-600">Blocked Balance</p>
+                      <p className="font-bold text-md">&#163;0.00</p>
+                    </div>
+                  </div>
+                  <div className="flex flex-col space-y-4 ">
+                    <div className="flex flex-row space-x-5 items-center justify-between ">
+                      <p className="text-gray-600">Total Incoming</p>
+                      <p className="font-bold text-md">&#163;2,000,000.50</p>
+                    </div>
+                    <div className=" flex flex-row items-center justify-between">
+                      <p className="text-gray-600">Total Outgoing</p>
+                      <p className="font-bold text-md">&#163;2,000,000.50</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
+                  <div className="bg-white border-2 cursor-pointer flex flex-row items-center justify-center p-2 text-center rounded-md border-[#017189] text-[#017189]">
+                    <img src="/img/payment.png" className="mr-2" />
+                    <span>Payment</span>
+                  </div>
+                  <div className="bg-white border-2 cursor-pointer flex flex-row items-center justify-center p-2 text-center rounded-md border-[#017189] text-[#017189]">
+                    <img src={arrow} className="mr-2" />
+                    <span>Pay In</span>
+                  </div>
+                  <div className="bg-white border-2 cursor-pointer flex flex-row items-center justify-center p-2 text-center rounded-md border-[#017189] text-[#017189]">
+                    <img src="/img/exchange.png" className="mr-2" />
+                    <span>Exchange</span>
+                  </div>
+                </div>
+
+                <div>
+                  <div className="mt-5 flex flex-row items-center text-[#017189]">
+                    <p>More options</p>
+                    <ChevronDownIcon className="h-7 ml-2 text-[#017189] cursor-pointer" />
+                  </div>
+
+                  <div className="space-y-4 mt-8">
+                    <div className="flex flex-row items-center">
+                      <img src={icon1} className="fill-white  mr-4" />
+                      <p className="text-gray-700">Remove as default wallet</p>
+                    </div>
+                    <div className="flex flex-row items-center">
+                      <img src={icon2} className="fill-white  mr-4" />
+                      <p className="text-gray-700">View Linked Card</p>
                     </div>
 
-                    <div className="flex items-center  p-2 rounded-md shadow-md">
-                      <img src={payin} className="w-16 mr-5" />
-                      <div>
-                        <p>Pay-Out</p>
-                        <p className="font-bold">$88,666.00</p>
+                    <div className="flex flex-row items-center">
+                      <img src={icon3} className="fill-white  mr-4" />
+                      <p className="text-gray-700">Statements</p>
+                    </div>
+
+                    <div className="flex flex-row items-center">
+                      <img src={icon4} className="fill-white mr-4" />
+                      <p className="text-gray-700">Inflow Details</p>
+                    </div>
+
+                    <div className="flex flex-row items-center">
+                      <img src={icon5} className="fill-white  mr-4" />
+                      <p className="text-gray-700">Wallet Information</p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div className="flex flex-row pb-5 pt-5 justify-between">
+                      <p className="">Activity</p>
+                      <p className="border-b-4 border-[#017189] font-bold">
+                        Transactions
+                      </p>
+                      <p>Invoices</p>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-col  justify-between">
+                    <div className="flex flex-col ">
+                      <div className="flex flex-row items-center justify-between ">
+                        <p className="text-gray-600">22 Jul, 2022</p>
+                        <p className="font-bold text-md text-[#0A6375]">
+                          View All
+                        </p>
+                      </div>
+                      <div className="flex flex-row items-center justify-between">
+                        <div className=" bg-white py-4 px-1 rounded-md flex flex-row justify-between w-full">
+                          <div className="flex flex-row space-x-2">
+                            <img src={payinvoucher} className="rounded-full" />
+                            <div className="flex flex-col">
+                              <span className="text-sm">Pay In-Voucher</span>
+                              <span className="text-sm">EUR wallet</span>
+                            </div>
+                          </div>
+                          <div className="flex flex-col text-right">
+                            <span className="font-bold text-[#16A34A]">
+                              &euro;750.65
+                            </span>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
