@@ -354,7 +354,7 @@ const ScreenOne = () => {
                     <p className="font-bold">$88,666.00</p>
                   </div>
                 </div>
-                <div className="flex items-center bg-gray-100 p-2 rounded-md shadow-md">
+                <div className="flex items-center  p-2 rounded-md shadow-md">
                   <img alt="alt" src={payout} className="w-16 mr-5" />
                   <div>
                     <p>Pay-In</p>
@@ -362,7 +362,7 @@ const ScreenOne = () => {
                   </div>
                 </div>
 
-                <div className="flex items-center bg-gray-100 p-2 rounded-md shadow-md">
+                <div className="flex items-center  p-2 rounded-md shadow-md">
                   <img alt="alt" src={payin} className="w-16 mr-5" />
                   <div>
                     <p>Pay-Out</p>
