@@ -94,7 +94,7 @@ const App = () => {
 
   return (
     <Layout>
-      <div className="md:hidden">
+      <div className="lg:hidden ">
         {toggle ? (
           <div className="w-11/12  bg-[#017189] md:hidden overflow-auto h-full fixed shadow-2xl top-0 left-0 z-50">
             <div className="flex flex-col p-6 relative">
@@ -195,7 +195,7 @@ const App = () => {
           ""
         )}
 
-        <nav className=" w-full bg-white-400 fixed pb-48 md:hidden">
+        <nav className=" w-full bg-white-400 fixed pb-48 lg:hidden">
           <div className="px-4 sm:px-10 py-4 bg-white flex flex-row  items-center justify-between shadow-md">
             <div
               onClick={() => {
@@ -231,7 +231,7 @@ const App = () => {
             </div>
           </div>
         </nav>
-        <main className="px-4 sm:px-10 pt-32 md:hidden">
+        <main className="px-4 sm:px-10 pt-32 lg:hidden">
           <div>
             <div className="border-gray-300 border-2 w-full flex flex-row items-center rounded-xl ">
               <SearchIcon className="h-6 text-gray-600  pl-2" />
@@ -386,7 +386,7 @@ const App = () => {
           </div>
         </main>
       </div>
-      <div className="md:flex ">
+      <div className="lg:flex hidden ">
         <div className="flex flex-row w-full">
           <div className="w-3/12 bg-[#017189]">
             {/* <div className="w-11/12 bg-[#017189] md:hidden overflow-auto h-full fixed shadow-2xl top-0 left-0 z-50"> */}
